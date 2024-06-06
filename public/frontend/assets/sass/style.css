@@ -4622,7 +4622,7 @@ Banner One CSS
   max-width: 650px;
 }
 .banner__one-content-video-icon i {
-  background: var(--text-white);
+  background: var(--dark-one);
   width: 60px;
   height: 60px;
   line-height: 60px;

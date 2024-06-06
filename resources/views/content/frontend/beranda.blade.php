@@ -64,11 +64,15 @@
                         <h2>D3 Teknologi Informasi</h2>
                         <p>Lulusan program studi Teknologi Informasi Politeknik Negeri Ketapang dibekali dengan pengetahuan teoritis dan pengalaman praktek sehingga siap masuk ke dunia kerja. Lulusan dikategorikan sebagai Informatic-workers yaitu profesional yang bekerja dibidang informatika atau bidang lain yang berbasis teknologi informatika sebagai operator, programmer, atau analis dan designer.</p>
                     </div>
-                    <div class="consulting__area-right-list">
-                        <span><i class="far fa-check"></i>Jenjang Diploma Tiga</span>
-                        <span><i class="far fa-check"></i>Gelar : A.Md.Kom</span>
+                    <div class="banner__one-content-button" data-animation="fadeInUp" data-delay="1s">
+                        <div class="consulting__area-right-list">
+                            <span><i class="far fa-check"></i>Jenjang Diploma Tiga</span>
+                            <span><i class="far fa-check"></i>Gelar : A.Md.Kom</span>
+                        </div>
+                        <div class="banner__one-content-video-icon" style="margin-left: 30px;margin-top: 7px;">
+                            <a class="video-popup" href="https://www.youtube.com/watch?v=PVEsqGrSa4E"><i class="fas fa-play"></i></a>										
+                        </div> 
                     </div>
-                    {{-- <a class="btn-six" href="contact.html">Contact Us<i class="far fa-chevron-double-right"></i></a> --}}
                 </div>
             </div>
         </div>
@@ -80,12 +84,17 @@
                     <div class="consulting__area-right-title">
                         <span class="subtitle-two">Program Studi</span>
                         <h2>D3 Teknologi Listrik</h2>
-                        <p>Lulusan program studi Teknologi Listrik Politeknik Negeri Ketapang dibekali dengan pengetahuan teoritis dan pengalaman praktik yang mendalam sehingga siap terjun ke dunia kerja. Lulusan dikategorikan sebagai Electrical Technicians, yaitu profesional yang bekerja di bidang kelistrikan atau bidang lain yang berbasis teknologi listrik sebagai teknisi, pengawas instalasi listrik, atau perancang sistem kelistrikan. Mereka memiliki kompetensi dalam merancang, memasang, mengoperasikan, dan memelihara sistem dan peralatan listrik sesuai dengan standar industri.</p>
+                        <p>Lulusan program studi Teknologi Listrik Politeknik Negeri Ketapang dibekali dengan pengetahuan teoritis dan pengalaman praktik yang mendalam sehingga siap terjun ke dunia kerja. Lulusan dikategorikan sebagai Electrical Technicians, yaitu profesional yang bekerja di bidang kelistrikan atau bidang lain yang berbasis teknologi listrik sebagai teknisi, pengawas instalasi listrik, atau perancang sistem kelistrikan.</p>
                     </div>
-                    <div class="consulting__area-right-list">
-                        <span><i class="far fa-check"></i>Jenjang Diploma Tiga</span>
-                        <span><i class="far fa-check"></i>Gelar : A.Md.Kom</span>
-                    </div>
+								<div class="banner__one-content-button" data-animation="fadeInUp" data-delay="1s">
+                                    <div class="consulting__area-right-list">
+                                        <span><i class="far fa-check"></i>Jenjang Diploma Tiga</span>
+                                        <span><i class="far fa-check"></i>Gelar : A.Md.Kom</span>
+                                    </div>
+									<div class="banner__one-content-video-icon" style="margin-left: 30px;margin-top: 7px;">
+										<a class="video-popup" href="https://www.youtube.com/watch?v=85lFM80NKys"><i class="fas fa-play"></i></a>										
+									</div> 
+								</div>
                     {{-- <a class="btn-six" href="contact.html">Contact Us<i class="far fa-chevron-double-right"></i></a> --}}
                 </div>
             </div>
