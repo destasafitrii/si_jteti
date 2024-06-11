@@ -60,10 +60,10 @@
                                 <tbody>
                                     @foreach ($pimpinans as $pimpinan)
                                         <tr>
-                                            <td>{{ $pimpinan->nama }}</td>
-                                            <td>{{ $pimpinan->nidn }}</td>
-                                            <td>{{ $pimpinan->nip }}</td>
-                                            <td>{{ $pimpinan->jabatan }}</td>
+                                            <td >{{ $pimpinan->nama }}</td>
+                                            <td >{{ $pimpinan->nidn }}</td>
+                                            <td >{{ $pimpinan->nip }}</td>
+                                            <td >{{ $pimpinan->jabatan }}</td>
                                             <td>
                                                 <div class="d-flex justify-content-center">
                                                     @if ($pimpinan->foto)
