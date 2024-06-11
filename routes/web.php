@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PimpinanController;
 use App\Http\Controllers\PimpinanWebController;
+use App\Http\Controllers\VisitiController;
+use App\Http\Controllers\VisitlController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,62 +20,66 @@ use App\Http\Controllers\PimpinanWebController;
 Route::get('/beranda', function () {
     return view('content/frontend/beranda');
 });
-// Route::get('/pimpinan', function () {
-//     return view('content/frontend/pimpinan');
-// });
 Route::get('/visimisi_ti', function () {
-    return view('content/frontend/visimisi_ti');
+    return view('content/frontend/profil/visimisi_ti');
 });
 Route::get('/visimisi_te', function () {
-    return view('content/frontend/visimisi_te');
+    return view('content/frontend/profil/visimisi_te');
 });
 Route::get('/dosen_ti', function () {
-    return view('content/frontend/dosen_ti');
+    return view('content/frontend/profil/dosen_ti');
 });
 Route::get('/dosen_te', function () {
-    return view('content/frontend/dosen_te');
+    return view('content/frontend/profil/dosen_te');
 });
 Route::get('/teknisi_ti', function () {
-    return view('content/frontend/teknisi_ti');
+    return view('content/frontend/profil/teknisi_ti');
 });
 Route::get('/teknisi_te', function () {
-    return view('content/frontend/teknisi_te');
+    return view('content/frontend/profil/teknisi_te');
 });
+
+
 Route::get('/laboratorium_ti', function () {
-    return view('content/frontend/laboratorium_ti');
+    return view('content/frontend/fasilitas/laboratorium_ti');
 });
 Route::get('/laboratorium_te', function () {
-    return view('content/frontend/laboratorium_te');
+    return view('content/frontend/fasilitas/laboratorium_te');
 });
 Route::get('/ruang_kelas_ti', function () {
-    return view('content/frontend/ruang_kelas_ti');
+    return view('content/frontend/fasilitas/ruang_kelas_ti');
 });
 Route::get('/ruang_kelas_te', function () {
-    return view('content/frontend/ruang_kelas_te');
-});
-Route::get('/akreditasi_ti', function () {
-    return view('content/frontend/akreditasi_ti');
-});
-Route::get('/akreditasi_te', function () {
-    return view('content/frontend/akreditasi_te');
+    return view('content/frontend/fasilitas/ruang_kelas_te');
 });
 Route::get('/ruang_manajemen_ti', function () {
-    return view('content/frontend/ruang_manajemen_ti');
+    return view('content/frontend/fasilitas/ruang_manajemen_ti');
 });
 Route::get('/ruang_manajemen_te', function () {
-    return view('content/frontend/ruang_manajemen_te');
+    return view('content/frontend/fasilitas/ruang_manajemen_te');
 });
+
+Route::get('/akreditasi_ti', function () {
+    return view('content/frontend/akreditasi/akreditasi_ti');
+});
+Route::get('/akreditasi_te', function () {
+    return view('content/frontend/akreditasi/akreditasi_te');
+});
+
+
 Route::get('/berita', function () {
     return view('content/frontend/berita');
 });
 Route::get('/kontak', function () {
     return view('content/frontend/kontak');
 });
+
+
 Route::get('/detail_berita', function () {
-    return view('content/frontend/detail_berita');
+    return view('content/frontend/berita/detail_berita');
 });
 Route::get('/detail_fasilitas', function () {
-    return view('content/frontend/detail_fasilitas');
+    return view('content/frontend/berita/detail_fasilitas');
 });
 Route::get('/admin', function () {
     return view('content/backend/dashboard');
@@ -89,4 +95,6 @@ Route::get('/pimpinan', [PimpinanWebController::class, 'index'])->name('frontend
 // Routes for backend
 Route::prefix('admin')->group(function () {
     Route::resource('pimpinan', PimpinanController::class);
+    Route::resource('visi-misi-ti', VisitiController::class);
+    Route::resource('visi-misi-tl', VisitlController::class);
 });

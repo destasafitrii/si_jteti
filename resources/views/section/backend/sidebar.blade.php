@@ -29,8 +29,8 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="pimpinan">Pimpinan</a></li>
-                        <li><a href="email-read.html">Visi & Misi Teknologi Informasi</a></li>
-                        <li><a href="email-read.html">Visi & Misi Teknologi Listrik</a></li>
+                        <li><a href="visi-misi-ti">Visi & Misi Teknologi Informasi</a></li>
+                        <li><a href="visi-misi-tl">Visi & Misi Teknologi Listrik</a></li>
                         <li><a href="email-read.html">Dosen Teknologi Informasi</a></li>
                         <li><a href="email-read.html">Dosen Teknologi Listrik</a></li>
                         <li><a href="email-read.html">Teknisi Teknologi Informasi</a></li>
