@@ -73,3 +73,9 @@ Route::get('/detail_berita', function () {
 Route::get('/detail_fasilitas', function () {
     return view('content/frontend/detail_fasilitas');
 });
+Route::get('/admin', function () {
+    return view('content/backend/dashboard');
+});
+Route::get('/admin/pimpinan', function () {
+        return view('content/backend/pimpinan/index'); 
+});

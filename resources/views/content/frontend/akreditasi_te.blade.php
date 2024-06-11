@@ -6,12 +6,12 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="page__banner-content">
-                    <span>faq</span>
+                    <span>akreditasi</span>
                     <ul>
                         <li><a href="index.html">Akreditasi</a><span>|</span></li>
                         <li>Program Studi</li>
                     </ul>
-                    <h1>Akreditasi Teknologi Listrik</h1>
+                    <h1>Teknologi Listrik</h1>
                 </div>
             </div>
         </div>

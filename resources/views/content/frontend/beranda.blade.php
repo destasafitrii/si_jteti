@@ -9,8 +9,8 @@
                     <div class="col-xl-12">
                         <div class="banner__two-content">
                             {{-- <b class="subtitle">Conbix</b> --}}
-                            <span data-animation="fadeInUp" data-delay=".3s">Welcome Our Company</span>
-                            <h1 data-animation="fadeInUp" data-delay=".7s">Desta Cantik</h1>
+                            <span data-animation="fadeInUp" data-delay=".3s">Selamat Datang di</span>
+                            <h1 data-animation="fadeInUp" data-delay=".7s">Jurusan Teknik Elektro dan Teknik Informatika</h1>
                             {{-- <div class="banner__two-content-button" data-animation="fadeInUp" data-delay="1s">
                                 <a class="btn-five" href="project-three.html">Let's Recent Works<i class="far fa-chevron-double-right"></i></a>
                             </div> --}}
@@ -27,8 +27,8 @@
                     <div class="col-xl-12">
                         <div class="banner__two-content">
                             {{-- <b class="subtitle">Conbix</b> --}}
-                            <span data-animation="fadeInUp" data-delay=".3s">Welcome Our Company</span>
-                            <h1 data-animation="fadeInUp" data-delay=".7s">Desta Cantik Sekali</h1>
+                            <span data-animation="fadeInUp" data-delay=".3s">selamat datang di</span>
+                            <h1 data-animation="fadeInUp" data-delay=".7s">jurusan teknik elektro dan teknik informatika</h1>
                             {{-- <div class="banner__two-content-button" data-animation="fadeInUp" data-delay="1s">
                                 <a class="btn-five" href="project-three.html">Let's Recent Works<i class="far fa-chevron-double-right"></i></a>
                             </div> --}}

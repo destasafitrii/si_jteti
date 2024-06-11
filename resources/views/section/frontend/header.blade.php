@@ -89,7 +89,7 @@
                         </div>
                     </div>
                     <div class="header__area-menubar-right-sidebar">
-                        <div class="header__area-menubar-right-sidebar-popup-icon"><img src="frontend/assets/img/icon/menu.png" alt=""></div>
+                        <div class="header__area-menubar-right-sidebar-popup-icon"><img src="frontend/assets/img/icon/menu-1.png" alt=""></div>
                     </div>
                     <div class="header__area-menubar-right-box-btn">
                         <a class="btn-one" href="request-quote.html">Request quote<i class="far fa-chevron-double-right"></i></a>
@@ -100,15 +100,15 @@
                         <div class="header__area-menubar-right-sidebar-popup-logo">
                             <a href="index.html"> <img src="frontend/assets/img/logo-poltek2.png" alt=""> </a>
                         </div>
-                        <p>Morbi et tellus imperdiet, aliquam nulla sed, dapibus erat. Aenean dapibus sem non purus venenatis vulputate. Donec accumsan eleifend blandit. Nullam auctor ligula</p>
+                        <p>Jurusan Teknik Elektro dan Teknik Informatika Politeknik Negeri Ketapang</p>
                         <div class="header__area-menubar-right-box-sidebar-popup-contact">
-                            <h4 class="mb-30">Get In Touch</h4>
+                            <h4 class="mb-30">Hubungi Kami</h4>
                             <div class="header__area-menubar-right-box-sidebar-popup-contact-item">
                                 <div class="header__area-menubar-right-box-sidebar-popup-contact-item-icon">
                                     <i class="fal fa-phone-alt icon-animation"></i>
                                 </div>
                                 <div class="header__area-menubar-right-box-sidebar-popup-contact-item-content">
-                                    <span>Call Now</span>
+                                    <span>Telp</span>
                                     <h6><a href="tel:+125(895)658568">+125 (895) 658 568</a></h6>
                                 </div>
                             </div>
@@ -117,11 +117,11 @@
                                     <i class="fal fa-envelope"></i>
                                 </div>
                                 <div class="header__area-menubar-right-box-sidebar-popup-contact-item-content">
-                                    <span>Quick Email</span>
+                                    <span>Email</span>
                                     <h6><a href="mailto:info.help@gmail.com">info.help@gmail.com</a></h6>
                                 </div>
                             </div>
-                            <div class="header__area-menubar-right-box-sidebar-popup-contact-item">
+                            {{-- <div class="header__area-menubar-right-box-sidebar-popup-contact-item">
                                 <div class="header__area-menubar-right-box-sidebar-popup-contact-item-icon">
                                     <i class="fal fa-map-marker-alt"></i>
                                 </div>
@@ -129,7 +129,7 @@
                                     <span>Office Address</span>
                                     <h6><a href="#">PV3M+X68 Welshpool United Kingdom</a></h6>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="header__area-menubar-right-box-sidebar-popup-social">
                             <ul>

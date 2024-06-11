@@ -6,7 +6,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="page__banner-content">
-                    <span>ruang manajemen</span>
+                    <span>ruangan</span>
                     <ul>
                         <li><a href="index.html">Fasilitas</a><span>|</span></li>
                         <li>Ruang Manajemen</li>

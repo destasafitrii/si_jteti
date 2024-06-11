@@ -6,10 +6,10 @@
         <div class="row">
             <div class="col-xl-12">
                 <div class="page__banner-content">
-                    <span>faq</span>
+                    <span>Kontak</span>
                     <ul>
-                        <li><a href="index.html">Home</a><span>|</span></li>
-                        <li>FAQ's</li>
+                        <li><a href="index.html">kontak</a><span>|</span></li>
+                        <li>jurusan</li>
                     </ul>
                     <h1>Hubungi Kami</h1>
                 </div>
@@ -27,9 +27,9 @@
 						<div class="contact__four-info-icon">
 							<img src="frontend/assets/img/icon/locationss.png" alt="">
                         </div>
-                        <h4>Office Location</h4>
-                        <span>You are most welcome to visit office.</span>
-						<p>8502 Preston Rd. Inglewood,<br> Maine 98380</p>
+                        <h4>Alamat</h4>
+                        {{-- <span>You are most welcome to visit office.</span> --}}
+						<p>Jl. Rangge Sentap, Dalong, Sukaharja, Delta Pawan, Kabupaten Ketapang, Kalimantan Barat</p>
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-6 md-mb-30 wow fadeInUp" data-wow-delay=".8s">
@@ -37,8 +37,8 @@
 						<div class="contact__four-info-icon">
 							<img src="frontend/assets/img/icon/phone-call.png" alt="">
 						</div>
-                        <h4>Tell With US</h4>
-                        <span>Keeping you always better connected.</span>
+                        <h4>Telp</h4>
+                        {{-- <span>Keeping you always better connected.</span> --}}
                         <p><a href="tel:+125(895)658568">+125 (895) 658 568</a></p>
                         <p><a href="tel:+125(874)452645">+125 (874) 452 645</a></p>
 					</div>
@@ -48,8 +48,8 @@
 						<div class="contact__four-info-icon">
 							<img src="frontend/assets/img/icon/emails.png" alt="">
 						</div>
-                        <h4>Quick Email</h4>
-                        <span>Drop us a mail we will answer you asap.</span>
+                        <h4>Email</h4>
+                        {{-- <span>Drop us a mail we will answer you asap.</span> --}}
                         <p><a href="mailto:info.conbix@gmail.com">info.conbix@gmail.com</a></p>
                         <p><a href="mailto:conbix@gmail.com">conbix@gmail.com</a></p>
 					</div>
