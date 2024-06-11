@@ -200,7 +200,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        MODAL
+                                      BELAJAR PULL
                         </div>
                         @endforeach
                         </tbody>
