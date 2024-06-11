@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class Pimpinan extends Model
 {
-    use HasFactory;
+    protected $table = 'pimpinan';
+    
 }

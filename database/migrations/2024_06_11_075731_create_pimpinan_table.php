@@ -33,4 +33,4 @@ class CreatePimpinanTable extends Migration
     {
         Schema::dropIfExists('pimpinan');
     }
-}
+};
