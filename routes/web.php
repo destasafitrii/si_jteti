@@ -5,6 +5,7 @@ use App\Http\Controllers\PimpinanController;
 use App\Http\Controllers\PimpinanWebController;
 use App\Http\Controllers\VisitiController;
 use App\Http\Controllers\VisitlController;
+use App\Http\Controllers\DosentiController;
 
 /*
 |--------------------------------------------------------------------------
@@ -97,4 +98,5 @@ Route::prefix('admin')->group(function () {
     Route::resource('pimpinan', PimpinanController::class);
     Route::resource('visi-misi-ti', VisitiController::class);
     Route::resource('visi-misi-tl', VisitlController::class);
+    Route::resource('dosen-teknologi-informasi', DosentiController::class);
 });
