@@ -82,11 +82,4 @@ Route::get('/admin/pimpinan', function () {
         return view('content/backend/pimpinan/index'); 
 });
 
-// Route to display a form to create a new resource
-Route::get('admin/pimpinan/create', [PimpinanController::class, 'create'])->name('pimpinan.create');
-
-Route::get('admin/pimpinan', [PimpinanController::class, 'index'])->name('pimpinan.index');
-// Route to store a newly created resource in storage
-Route::post('admin/pimpinan', [PimpinanController::class, 'store'])->name('pimpinan.store');
-
-// Other CRUD routes...
+Route::resource('admin/pimpinan', PimpinanController::class);
