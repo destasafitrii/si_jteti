@@ -28,7 +28,7 @@
                         <span>Profil</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="email-inbox.html">Pemimpin</a></li>
+                        <li><a href="pimpinan">Pimpinan</a></li>
                         <li><a href="email-read.html">Visi & Misi Teknologi Informasi</a></li>
                         <li><a href="email-read.html">Visi & Misi Teknologi Listrik</a></li>
                         <li><a href="email-read.html">Dosen Teknologi Informasi</a></li>

@@ -41,7 +41,7 @@
                     <div class="card">
                         <div class="card-body">
                             <h4 class="header-title">Data Pimpinan</h4>
-                            <p class="card-title-desc">
+                            <p class="card-title-desc text-end"> 
                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
                                     data-bs-target="#addModal">+ Tambah Data</button>
                             </p>
@@ -200,7 +200,6 @@
                                                 </div>
                                             </div>
                                         </div>
-                                      BELAJAR PULL
                         </div>
                         @endforeach
                         </tbody>
@@ -241,9 +240,12 @@
                                                 <input type="file" id="foto" name="foto"
                                                     class="form-control">
                                             </div>
-                                            <div class="d-flex justify-content-end align-items-end mt-4">
-                                                <button class="btn btn-primary waves-effect waves-light"
-                                                    type="submit">Submit</button>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary waves-effect"
+                                                    data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                                    <button class="btn btn-primary waves-effect waves-light"
+                                                        type="submit">Submit</button>
+                                            </div>
                                             </div>
                                         </form>
                                     </div>

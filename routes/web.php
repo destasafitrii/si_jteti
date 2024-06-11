@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PimpinanController;
-
+use App\Http\Controllers\PimpinanWebController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +18,9 @@ use App\Http\Controllers\PimpinanController;
 Route::get('/beranda', function () {
     return view('content/frontend/beranda');
 });
-Route::get('/pimpinan', function () {
-    return view('content/frontend/pimpinan');
-});
+// Route::get('/pimpinan', function () {
+//     return view('content/frontend/pimpinan');
+// });
 Route::get('/visimisi_ti', function () {
     return view('content/frontend/visimisi_ti');
 });
@@ -82,4 +82,11 @@ Route::get('/admin/pimpinan', function () {
         return view('content/backend/pimpinan/index'); 
 });
 
-Route::resource('admin/pimpinan', PimpinanController::class);
+//////////////////////////////
+// Routes for frontend
+Route::get('/pimpinan', [PimpinanWebController::class, 'index'])->name('frontend.pimpinan.index');
+
+// Routes for backend
+Route::prefix('admin')->group(function () {
+    Route::resource('pimpinan', PimpinanController::class);
+});

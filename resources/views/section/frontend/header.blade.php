@@ -92,7 +92,7 @@
                         <div class="header__area-menubar-right-sidebar-popup-icon"><img src="frontend/assets/img/icon/menu-1.png" alt=""></div>
                     </div>
                     <div class="header__area-menubar-right-box-btn">
-                        <a class="btn-one" href="request-quote.html">Request quote<i class="far fa-chevron-double-right"></i></a>
+                        {{-- <a class="btn-one" href="request-quote.html">Request quote<i class="far fa-chevron-double-right"></i></a> --}}
                     </div>
                     <!-- sidebar Menu Start -->
                     <div class="header__area-menubar-right-sidebar-popup">

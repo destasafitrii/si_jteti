@@ -12,7 +12,7 @@ class PimpinanController extends Controller
     public function index()
     {
         $pimpinans = Pimpinan::all();
-        return view('content.backend.pimpinan.index', compact('pimpinans'));
+        return view('content.backend.profil.pimpinan', compact('pimpinans'));
     }
 
     // Show the form for creating a new resource.
