@@ -44,12 +44,9 @@
                         <span>Fasilitas</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="email-read.html">Laboratorium Teknologi Informasi</a></li>
-                        <li><a href="email-read.html">Laboratorium Teknologi Listrik</a></li>
-                        <li><a href="email-read.html">Ruang Kelas Teknologi Informasi</a></li>
-                        <li><a href="email-read.html">Ruang Kelas Teknologi Listrik</a></li>
-                        <li><a href="email-read.html">Ruang manajemen Teknologi Informasi</a></li>
-                        <li><a href="email-read.html">Ruang manajemen Teknologi Listrik</a></li>
+                        <li><a href="email-read.html">Laboratorium</a></li>
+                        <li><a href="email-read.html">Ruang Kelas</a></li>
+                        <li><a href="email-read.html">Ruang manajemen</a></li>
                     </ul>
                 </li>
 

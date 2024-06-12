@@ -41,23 +41,15 @@
                         </li>
                         <li class="menu-item-has-children"><a href="#">Fasilitas</a>
                             <ul class="sub-menu">
-                                <li class="menu-item-has-children"><a href="#">Laboratorium</a>
-                                    <ul class="sub-menu">
+                                <li><a href="laboratorium">laboratorium</a></li>
+                                    {{-- <ul class="sub-menu">
                                         <li><a href="laboratorium_ti">Teknologi Informasi</a></li>
                                         <li><a href="laboratorium_te">Teknologi Listrik</a></li>
-                                    </ul>
+                                    </ul> --}}
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">Ruang Kelas</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="ruang_kelas_ti">Teknologi Informasi</a></li>
-                                        <li><a href="ruang_kelas_te">Teknologi Listrik</a></li>
-                                    </ul>
+                                <li><a href="ruang_kelas">Ruang Kelas</a></li>
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">Ruang Manajemen Jurusan & Prodi</a>
-                                    <ul class="sub-menu">
-                                        <li><a href="ruang_manajemen_ti">Teknologi Informasi</a></li>
-                                        <li><a href="ruang_manajemen_te">Teknologi Listrik</a></li>
-                                    </ul>
+                                <li><a href="ruang_manajemen">Ruang Manajemen</a></li>
                                 </li>
                             </ul>
                         </li>
@@ -67,6 +59,8 @@
                                 <li><a href="akreditasi_te">Teknologi Listrik</a></li>
                             </ul>
                         </li>
+                        {{-- <li class="menu-item-has-children"><a href="berita">Kurikulum</a>
+                        </li> --}}
                         <li class="menu-item-has-children"><a href="berita">Berita</a>
                         </li>
                         <li class="menu-item-has-children"><a href="kontak">Kontak</a>

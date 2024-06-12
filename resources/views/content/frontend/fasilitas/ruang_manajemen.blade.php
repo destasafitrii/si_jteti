@@ -1,17 +1,17 @@
 @extends('template.frontend')
 @section('content')
 <!-- Page Banner Area Start -->
-<div class="page__banner" data-background="frontend/assets/img/pages/page-banner.jpg">
+<div class="page__banner" data-background="frontend/assets/img/pages/page-banner.jpg" style="padding-bottom: 144px;">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
                 <div class="page__banner-content">
-                    <span>ruang kelas</span>
+                    <span>ruangan</span>
                     <ul>
                         <li><a href="index.html">Fasilitas</a><span>|</span></li>
-                        <li>Ruang Kelas</li>
+                        <li>Ruang Manajemen</li>
                     </ul>
-                    <h1>Teknologi Informasi</h1>
+                    <h1>Ruangan Manajemen</h1>
                 </div>
             </div>
         </div>

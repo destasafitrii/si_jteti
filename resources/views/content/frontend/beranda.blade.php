@@ -89,7 +89,7 @@
 								<div class="banner__one-content-button" data-animation="fadeInUp" data-delay="1s">
                                     <div class="consulting__area-right-list">
                                         <span><i class="far fa-check"></i>Jenjang Diploma Tiga</span>
-                                        <span><i class="far fa-check"></i>Gelar : A.Md.Kom</span>
+                                        <span><i class="far fa-check"></i>Gelar : A.Md.T</span>
                                     </div>
 									<div class="banner__one-content-video-icon" style="margin-left: 30px;margin-top: 7px;">
 										<a class="video-popup" href="https://www.youtube.com/watch?v=85lFM80NKys"><i class="fas fa-play"></i></a>										

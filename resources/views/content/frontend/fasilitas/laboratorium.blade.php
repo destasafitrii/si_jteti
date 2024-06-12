@@ -11,7 +11,7 @@
                         <li><a href="index.html">Fasilitas</a><span>|</span></li>
                         <li>Laboratorium</li>
                     </ul>
-                    <h1>Teknologi Listrik</h1>
+                    <h1>Laboratorium Jurusan</h1>
                 </div>
             </div>
         </div>

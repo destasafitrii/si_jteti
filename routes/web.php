@@ -6,7 +6,9 @@ use App\Http\Controllers\PimpinanWebController;
 use App\Http\Controllers\VisitiController;
 use App\Http\Controllers\VisitlController;
 use App\Http\Controllers\DosentiController;
-
+use App\Http\Controllers\DosentlController;
+use App\Http\Controllers\TeknisitiController;
+use App\Http\Controllers\TeknisitlController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,23 +43,17 @@ Route::get('/teknisi_te', function () {
 });
 
 
-Route::get('/laboratorium_ti', function () {
-    return view('content/frontend/fasilitas/laboratorium_ti');
+Route::get('/laboratorium', function () {
+    return view('content/frontend/fasilitas/laboratorium');
 });
-Route::get('/laboratorium_te', function () {
-    return view('content/frontend/fasilitas/laboratorium_te');
+// Route::get('/laboratorium_te', function () {
+//     return view('content/frontend/fasilitas/laboratorium_te');
+// });
+Route::get('/ruang_kelas', function () {
+    return view('content/frontend/fasilitas/ruang_kelas');
 });
-Route::get('/ruang_kelas_ti', function () {
-    return view('content/frontend/fasilitas/ruang_kelas_ti');
-});
-Route::get('/ruang_kelas_te', function () {
-    return view('content/frontend/fasilitas/ruang_kelas_te');
-});
-Route::get('/ruang_manajemen_ti', function () {
-    return view('content/frontend/fasilitas/ruang_manajemen_ti');
-});
-Route::get('/ruang_manajemen_te', function () {
-    return view('content/frontend/fasilitas/ruang_manajemen_te');
+Route::get('/ruang_manajemen', function () {
+    return view('content/frontend/fasilitas/ruang_manajemen');
 });
 
 Route::get('/akreditasi_ti', function () {
@@ -69,7 +65,7 @@ Route::get('/akreditasi_te', function () {
 
 
 Route::get('/berita', function () {
-    return view('content/frontend/berita');
+    return view('content/frontend/berita/berita');
 });
 Route::get('/kontak', function () {
     return view('content/frontend/kontak');
@@ -80,7 +76,7 @@ Route::get('/detail_berita', function () {
     return view('content/frontend/berita/detail_berita');
 });
 Route::get('/detail_fasilitas', function () {
-    return view('content/frontend/berita/detail_fasilitas');
+    return view('content/frontend/fasilitas/detail_fasilitas');
 });
 Route::get('/admin', function () {
     return view('content/backend/dashboard');
@@ -99,4 +95,7 @@ Route::prefix('admin')->group(function () {
     Route::resource('visi-misi-ti', VisitiController::class);
     Route::resource('visi-misi-tl', VisitlController::class);
     Route::resource('dosen-teknologi-informasi', DosentiController::class);
+    Route::resource('dosen-teknologi-listrik', DosentlController::class);
+    Route::resource('teknisi-teknologi-informasi', TeknisitiController::class);
+    Route::resource('teknisi-teknologi-listrik', TeknisitlController::class);
 });
