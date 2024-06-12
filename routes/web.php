@@ -9,6 +9,9 @@ use App\Http\Controllers\DosentiController;
 use App\Http\Controllers\DosentlController;
 use App\Http\Controllers\TeknisitiController;
 use App\Http\Controllers\TeknisitlController;
+use App\Http\Controllers\LaboratoriumController;
+use App\Http\Controllers\RuangkelasController;
+use App\Http\Controllers\RuangmanajemenController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,9 +49,6 @@ Route::get('/teknisi_te', function () {
 Route::get('/laboratorium', function () {
     return view('content/frontend/fasilitas/laboratorium');
 });
-// Route::get('/laboratorium_te', function () {
-//     return view('content/frontend/fasilitas/laboratorium_te');
-// });
 Route::get('/ruang_kelas', function () {
     return view('content/frontend/fasilitas/ruang_kelas');
 });
@@ -98,4 +98,7 @@ Route::prefix('admin')->group(function () {
     Route::resource('dosen-teknologi-listrik', DosentlController::class);
     Route::resource('teknisi-teknologi-informasi', TeknisitiController::class);
     Route::resource('teknisi-teknologi-listrik', TeknisitlController::class);
+    Route::resource('laboratorium', LaboratoriumController::class);
+    Route::resource('ruangkelas', RuangkelasController::class);
+    Route::resource('ruangmanajemen', RuangmanajemenController::class);
 });
