@@ -194,45 +194,41 @@
                         </table>
 
                         <!-- Add Modal -->
-                        <div class="modal fade" id="addModal" tabindex="-1" role="dialog"
-                            aria-labelledby="addModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="addModalLabel">Tambah Data Akreditasi Teknologi Informasi</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
-                                    <div class="modal-body">
-                                        <form action="{{ route('akreditasi-teknologi-informasi.store') }}" method="POST"
-                                            enctype="multipart/form-data">
-                                            @csrf
+                                    <form action="{{ route('akreditasi-teknologi-informasi.store') }}" method="POST" enctype="multipart/form-data">
+                                        @csrf
+                                        <div class="modal-body">
                                             <div class="form-group mb-4">
                                                 <label class="mb-2" for="tanggal_akreditasi">Tanggal Akreditasi</label>
-                                                <input id="tanggal_akreditasi" name="tanggal_akreditasi" class="form-control" required>
+                                                <input type="date" id="tanggal_akreditasi" name="tanggal_akreditasi" class="form-control" required>
                                             </div>
-
+                        
                                             <div class="form-group mb-4">
                                                 <label class="mb-2" for="masa_berlaku">Masa berlaku</label>
-                                                <input id="masa_berlaku" name="masa_berlaku" class="form-control" required>
+                                                <input type="date" id="masa_berlaku" name="masa_berlaku" class="form-control" required>
                                             </div>
+                        
                                             <div class="form-group mb-4">
                                                 <label class="mb-2" for="foto">Foto</label>
-                                                <input type="file" id="foto" name="foto"
-                                                    class="form-control">
+                                                <input type="file" id="foto" name="foto" class="form-control">
                                             </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary waves-effect"
-                                                    data-bs-dismiss="modal" aria-label="Close">Close</button>
-                                                    <button class="btn btn-primary waves-effect waves-light"
-                                                        type="submit">Submit</button>
-                                            </div>
-                                            </div>
-                                        </form>
-                                    </div>
+                                        </div>
+                                        
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
+                        
 
                     </div>
                     <!-- end col -->
