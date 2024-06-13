@@ -12,6 +12,7 @@ use App\Http\Controllers\TeknisitlController;
 use App\Http\Controllers\LaboratoriumController;
 use App\Http\Controllers\RuangkelasController;
 use App\Http\Controllers\RuangmanajemenController;
+use App\Http\Controllers\AkreditasitiController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -101,4 +102,5 @@ Route::prefix('admin')->group(function () {
     Route::resource('laboratorium', LaboratoriumController::class);
     Route::resource('ruangkelas', RuangkelasController::class);
     Route::resource('ruangmanajemen', RuangmanajemenController::class);
+    Route::resource('akreditasi-teknologi-informasi', AkreditasitiController::class);
 });

@@ -21,20 +21,20 @@
                                 <li><a href="pimpinan">Pimpinan</a></li>
                                 <li class="menu-item-has-children"><a href="#">Visi dan Misi</a>
                                     <ul class="sub-menu">
-                                        <li><a href="visimisi_ti">Teknologi Informasi</a></li>
-                                        <li><a href="visimisi_te">Teknologi Listrik</a></li>
+                                        <li><a href="visimisi_ti">Prodi Teknologi Informasi</a></li>
+                                        <li><a href="visimisi_te">Prodi Teknologi Listrik</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Dosen</a>
                                     <ul class="sub-menu">
-                                        <li><a href="dosen_ti">Teknologi Informasi</a></li>
-                                        <li><a href="dosen_te">Teknologi Listrik</a></li>
+                                        <li><a href="dosen_ti">Prodi Teknologi Informasi</a></li>
+                                        <li><a href="dosen_te">Prodi Teknologi Listrik</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Teknisi</a>
                                     <ul class="sub-menu">
-                                        <li><a href="teknisi_ti">Teknologi Informasi</a></li>
-                                        <li><a href="teknisi_te">Teknologi Listrik</a></li>
+                                        <li><a href="teknisi_ti">Prodi Teknologi Informasi</a></li>
+                                        <li><a href="teknisi_te">Prodi Teknologi Listrik</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -53,10 +53,20 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item-has-children"><a href="#">Akreditasi</a>
+                        <li class="menu-item-has-children"><a href="#">Akademik</a>
                             <ul class="sub-menu">
-                                <li><a href="akreditasi_ti">Teknologi Informasi</a></li>
-                                <li><a href="akreditasi_te">Teknologi Listrik</a></li>
+                                <li class="menu-item-has-children"><a href="#">Akreditasi</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="akreditasi_ti">Prodi Teknologi Informasi</a></li>
+                                        <li><a href="akreditasi_te">Prodi Teknologi Listrik</a></li>
+                                    </ul>
+                                    <li class="menu-item-has-children"><a href="#">Kurikulum</a>
+                                        <ul class="sub-menu">
+                                            <li><a href="#">Prodi Teknologi Informasi</a></li>
+                                            <li><a href="#">Prodi Teknologi Listrik</a></li>
+                                        </ul>
+                                    </li>
+                                </li>
                             </ul>
                         </li>
                         {{-- <li class="menu-item-has-children"><a href="berita">Kurikulum</a>

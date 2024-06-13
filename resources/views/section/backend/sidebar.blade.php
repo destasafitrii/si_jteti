@@ -53,11 +53,15 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <div class="d-inline-block icons-sm me-1"><i class="fas fa-book"></i></div>
-                        <span>Akreditasi</span>
+                        <span>Akademik</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="email-read.html">Teknologi Informasi</a></li>
-                        <li><a href="email-read.html">Teknologi Listrik</a></li>
+                        <li><a href="akreditasi-teknologi-informasi">Akreditasi Teknologi Informasi</a></li>
+                        <li><a href="email-read.html">Akreditasi Teknologi Listrik</a></li>
+                    </ul>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="email-read.html">Kurikulum Teknologi Informasi</a></li>
+                        <li><a href="email-read.html">Kurikulum Teknologi Listrik</a></li>
                     </ul>
                 </li>
 
