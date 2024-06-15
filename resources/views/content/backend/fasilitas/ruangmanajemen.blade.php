@@ -7,7 +7,7 @@
                 <div class="col-md-8">
                     <h4 class="page-title mb-1">Ruang Manajemen</h4>
                     <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Tables</a></li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Fasilitas</a></li>
                         <li class="breadcrumb-item active">Ruang Manajemen</li>
                     </ol>
                 </div>
@@ -171,7 +171,7 @@
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <p>Apakah Kamu Yakin Menghapus Data ini?</p>
+                                                        <p>Apakah Anda Yakin Menghapus Data ini?</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary waves-effect"

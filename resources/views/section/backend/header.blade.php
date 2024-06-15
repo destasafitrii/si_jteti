@@ -55,11 +55,11 @@
                     </form>
                 </div>
             </div>
-            <div class="dropdown d-inline-block">
+            {{-- <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item noti-icon right-bar-toggle waves-effect">
                     <i class="mdi mdi-tune"></i>
                 </button>
-            </div>
+            </div> --}}
 
             {{-- <!-- light dark btn -->
             <div class="dropdown d-none d-sm-inline-block">

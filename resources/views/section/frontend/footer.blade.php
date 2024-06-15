@@ -48,7 +48,7 @@
                     <div class="footer__one-widget-location">
                         <div class="footer__one-widget-location-item">
                             <div class="footer__one-widget-location-item-info">
-                                <a href="#">Jl. Rangge Sentap, Dalong, Sukaharja, Delta Pawan, Kabupaten Ketapang, Kalimantan Barat</a>
+                                <a href="https://maps.app.goo.gl/v5Dm9nMrU2KxoyCf6">Jl. Rangge Sentap, Dalong, Sukaharja, Delta Pawan, Kabupaten Ketapang, Kalimantan Barat</a>
                             </div>
                         </div>
                         {{-- <h6>Branch Office</h6>

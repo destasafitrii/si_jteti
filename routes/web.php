@@ -13,6 +13,11 @@ use App\Http\Controllers\LaboratoriumController;
 use App\Http\Controllers\RuangkelasController;
 use App\Http\Controllers\RuangmanajemenController;
 use App\Http\Controllers\AkreditasitiController;
+use App\Http\Controllers\AkreditasitlController;
+use App\Http\Controllers\BeritajurusanController;
+use App\Http\Controllers\BeritapenelitianController;
+use App\Http\Controllers\BeritapengabdianController;
+use App\Http\Controllers\BeritapblController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -63,10 +68,22 @@ Route::get('/akreditasi_ti', function () {
 Route::get('/akreditasi_te', function () {
     return view('content/frontend/akreditasi/akreditasi_te');
 });
+Route::get('/kurikulum_ti', function () {
+    return view('content/frontend/akreditasi/kurikulum_ti');
+});
 
 
 Route::get('/berita', function () {
     return view('content/frontend/berita/berita');
+});
+Route::get('/penelitian', function () {
+    return view('content/frontend/berita/penelitian');
+});
+Route::get('/pengabdian', function () {
+    return view('content/frontend/berita/pengabdian');
+});
+Route::get('/pbl', function () {
+    return view('content/frontend/berita/pbl');
 });
 Route::get('/kontak', function () {
     return view('content/frontend/kontak');
@@ -79,9 +96,7 @@ Route::get('/detail_berita', function () {
 Route::get('/detail_fasilitas', function () {
     return view('content/frontend/fasilitas/detail_fasilitas');
 });
-Route::get('/admin', function () {
-    return view('content/backend/dashboard');
-});
+
 Route::get('/admin/pimpinan', function () {
         return view('content/backend/pimpinan/index'); 
 });
@@ -91,7 +106,8 @@ Route::get('/admin/pimpinan', function () {
 Route::get('/pimpinan', [PimpinanWebController::class, 'index'])->name('frontend.pimpinan.index');
 
 // Routes for backend
-Route::prefix('admin')->group(function () {
+Route::prefix('/admin')->group(function () {
+    Route::get('dashboard', function () {return view('content/backend/dashboard');});
     Route::resource('pimpinan', PimpinanController::class);
     Route::resource('visi-misi-ti', VisitiController::class);
     Route::resource('visi-misi-tl', VisitlController::class);
@@ -103,4 +119,9 @@ Route::prefix('admin')->group(function () {
     Route::resource('ruangkelas', RuangkelasController::class);
     Route::resource('ruangmanajemen', RuangmanajemenController::class);
     Route::resource('akreditasi-teknologi-informasi', AkreditasitiController::class);
+    Route::resource('akreditasi-teknologi-listrik', AkreditasitlController::class);
+    Route::resource('berita-jurusan', BeritajurusanController::class);
+    Route::resource('berita-penelitian', BeritapenelitianController::class);
+    Route::resource('berita-pengabdian', BeritapengabdianController::class);
+    Route::resource('berita-pbl', BeritapblController::class);
 });

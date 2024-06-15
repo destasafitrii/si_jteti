@@ -42,10 +42,6 @@
                         <li class="menu-item-has-children"><a href="#">Fasilitas</a>
                             <ul class="sub-menu">
                                 <li><a href="laboratorium">laboratorium</a></li>
-                                    {{-- <ul class="sub-menu">
-                                        <li><a href="laboratorium_ti">Teknologi Informasi</a></li>
-                                        <li><a href="laboratorium_te">Teknologi Listrik</a></li>
-                                    </ul> --}}
                                 </li>
                                 <li><a href="ruang_kelas">Ruang Kelas</a></li>
                                 </li>
@@ -62,7 +58,7 @@
                                     </ul>
                                     <li class="menu-item-has-children"><a href="#">Kurikulum</a>
                                         <ul class="sub-menu">
-                                            <li><a href="#">Prodi Teknologi Informasi</a></li>
+                                            <li><a href="kurikulum_ti">Prodi Teknologi Informasi</a></li>
                                             <li><a href="#">Prodi Teknologi Listrik</a></li>
                                         </ul>
                                     </li>
@@ -72,6 +68,16 @@
                         {{-- <li class="menu-item-has-children"><a href="berita">Kurikulum</a>
                         </li> --}}
                         <li class="menu-item-has-children"><a href="berita">Berita</a>
+                            <ul class="sub-menu">
+                                <li><a href="berita">Berita Jurusan</a></li>
+                                </li>
+                                <li><a href="penelitian">Penelitian</a></li>
+                                </li>
+                                <li><a href="pengabdian">Pengabdian</a></li>
+                                </li>
+                                <li><a href="pbl">PBL</a></li>
+                                </li>
+                            </ul>
                         </li>
                         <li class="menu-item-has-children"><a href="kontak">Kontak</a>
                         </li>
@@ -80,7 +86,7 @@
             </div>
             <div class="header__area-menubar-right">
                 <div class="header__area-menubar-right-box">
-                    <div class="header__area-menubar-right-box-search">
+                    {{-- <div class="header__area-menubar-right-box-search">
                         <div class="search">	
                             <span class="header__area-menubar-right-box-search-icon open"><i class="fal fa-search"></i></span>
                         </div>
@@ -91,7 +97,7 @@
                                 </button>
                             </form> <span class="header__area-menubar-right-box-search-box-icon"><i class="fal fa-times"></i></span>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="header__area-menubar-right-sidebar">
                         <div class="header__area-menubar-right-sidebar-popup-icon"><img src="frontend/assets/img/icon/menu-1.png" alt=""></div>
                     </div>

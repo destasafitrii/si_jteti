@@ -18,37 +18,100 @@
     </div>
 </div>    
 <!-- Page Banner Area End -->
-<!-- Project Details Area Start -->
-<div class="project__details section-padding">
+<div class="company__history section-padding">
     <div class="container">
+        <div class="row mb-70">
+            <div class="col-xl-12">
+                <div class="company__history-title t-center">
+                    <span class="subtitle-one">Our History</span>
+                    <h2>Our Company History</h2>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-xl-12">
-                <div class="project__details-area">
-                    <div class="project__details-area-image dark__image">
-                        <img src="frontend/assets/img/portfolio/project-details.jpg" alt="">
-                    </div>
-                    <div class="project__details-area-meta">
-                        <div class="project__details-area-meta-item">
-                            <h6>Date :<span>29 December, 2022</span></h6>
+                <div class="company__history-area dark__image">
+                    <div class="company__history-area-item">
+                        <div class="company__history-area-item-left">
+                            <img src="frontend/assets/img/about/history-1.jpg" alt="">
                         </div>
-                        <div class="project__details-area-meta-item">
-                            <h6>Category :<span>Business Consulting</span></h6>
-                        </div>
-                        <div class="project__details-area-meta-item">
-                            <h6>Customer :<span>ThemeOri</span></h6>
-                        </div>
-                        <div class="project__details-area-meta-item">
-                            <h6>Locations :<span>Preston Rd. Inglewood,</span></h6>
+                        <div class="company__history-area-item-right">
+                            <div class="company__history-area-item-right-content mb-50 xl-mb-30">
+                                <div class="company__history-area-item-right-content-date">
+                                    <span>2003</span>
+                                    <h5>Start Company</h5>
+                                </div>
+                                <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
+                            </div>
                         </div>
                     </div>
-                    <h2 class="mb-30">We offer consulting to both small and large companies</h2>
-                    <p class="mb-25">Pellentesque sit amet justo consectetur, aliquam erat nec, interdum neque. Aliquam eget lacinia massa. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean tempor, lectus quis dictum posuere, mauris nisl pellentesque urna, eget sagittis tortor lacus at urna. Quisque rutrum sollicitudin tristique. Nunc imperdiet, enim pulvinar rhoncus gravida, sem nisl efficitur sapien, ac elementum augue metus quis mi. Curabitur aliquam est ut sapien laoreet, vel dictum erat rhoncus. Sed at ex odio.</p>
-                    {{-- <p>Fusce ornare mauris arcu, eget placerat erat porttitor at. Cras non justo consectetur, tempus lectus a, tempor arcu. Proin luctus sagittis augue, vitae aliquet felis dignissim nec. Nam eget nunc auctor, condimentum odio id, facilisis libero. Cras pellentesque risus in est dignissim eleifend. Ut accumsan urna sed dictum faucibus. Integer condimentum vulputate sapien, id posuere eros tincidunt in</p> --}}
+                    <div class="company__history-area-items">
+                        <div class="company__history-area-items-left order-last order-lg-first">
+                            <div class="company__history-area-items-left-content mb-50 xl-mb-30">
+                                <div class="company__history-area-items-left-content-date">
+                                    <span>2008</span>
+                                    <h5>Opening Office</h5>
+                                </div>
+                                <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
+                            </div>
+                        </div>
+                        <div class="company__history-area-items-right">
+                            <div class="company__history-area-items-right-image">
+                                <img src="frontend/assets/img/about/history-2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company__history-area-item">
+                        <div class="company__history-area-item-left">
+                            <div class="company__history-area-item-left-image">
+                                <img src="frontend/assets/img/about/history-3.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="company__history-area-item-right">
+                            <div class="company__history-area-item-right-content mb-50 xl-mb-30">
+                                <div class="company__history-area-item-right-content-date">
+                                    <span>2013</span>
+                                    <h5>Improve Management</h5>
+                                </div>
+                                <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company__history-area-items">
+                        <div class="company__history-area-items-left order-last order-lg-first">
+                            <div class="company__history-area-items-left-content mb-50 xl-mb-30">
+                                <div class="company__history-area-items-left-content-date">
+                                    <span>2018</span>
+                                    <h5>Open Research Team</h5>
+                                </div>
+                                <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
+                            </div>
+                        </div>
+                        <div class="company__history-area-items-right">
+                            <div class="company__history-area-items-right-image">
+                                <img src="frontend/assets/img/about/history-4.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company__history-area-item">
+                        <div class="company__history-area-item-left">
+                            <div class="company__history-area-item-left-image">
+                                <img src="frontend/assets/img/about/history-5.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="company__history-area-item-right">
+                            <div class="company__history-area-item-right-content">
+                                <div class="company__history-area-item-right-content-date">
+                                    <span>2023</span>
+                                    <h5>Winning Award</h5>
+                                </div>
+                                <p>Aliquam sit amet massa quis augue porta consequat eu eu lectus. Praesent a ipsum a sem tristique</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Project Details Area End -->
-
 @endsection

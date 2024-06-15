@@ -9,7 +9,7 @@
                 <li class="menu-title">Menu</li>
 
                 <li>
-                    <a href="index.html" class="waves-effect">
+                    <a href="dashboard" class="waves-effect">
                         <div class="d-inline-block icons-sm me-1"><i class="fas fa-home"></i></div><span class="badge rounded-pill text-bg-success float-end"></span>
                         <span>Dashboard</span>
                     </a>
@@ -29,12 +29,12 @@
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
                         <li><a href="pimpinan">Pimpinan</a></li>
-                        <li><a href="visi-misi-ti">Visi & Misi Teknologi Informasi</a></li>
-                        <li><a href="visi-misi-tl">Visi & Misi Teknologi Listrik</a></li>
-                        <li><a href="dosen-teknologi-informasi">Dosen Teknologi Informasi</a></li>
-                        <li><a href="dosen-teknologi-listrik">Dosen Teknologi Listrik</a></li>
-                        <li><a href="teknisi-teknologi-informasi">Teknisi Teknologi Informasi</a></li>
-                        <li><a href="teknisi-teknologi-listrik">Teknisi Teknologi Listrik</a></li>
+                        <li><a href="visi-misi-ti">Visi & Misi Prodi Teknologi Informasi</a></li>
+                        <li><a href="visi-misi-tl">Visi & Misi Prodi Teknologi Listrik</a></li>
+                        <li><a href="dosen-teknologi-informasi">Dosen Prodi Teknologi Informasi</a></li>
+                        <li><a href="dosen-teknologi-listrik">Dosen Prodi Teknologi Listrik</a></li>
+                        <li><a href="teknisi-teknologi-informasi">Teknisi Prodi Teknologi Informasi</a></li>
+                        <li><a href="teknisi-teknologi-listrik">Teknisi Prodi Teknologi Listrik</a></li>
                     </ul>
                 </li>
 
@@ -56,19 +56,31 @@
                         <span>Akademik</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="akreditasi-teknologi-informasi">Akreditasi Teknologi Informasi</a></li>
-                        <li><a href="email-read.html">Akreditasi Teknologi Listrik</a></li>
+                        <li><a href="akreditasi-teknologi-informasi">Akreditasi Pordi Teknologi Informasi</a></li>
+                        <li><a href="akreditasi-teknologi-listrik">Akreditasi Prodi Teknologi Listrik</a></li>
                     </ul>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="email-read.html">Kurikulum Teknologi Informasi</a></li>
-                        <li><a href="email-read.html">Kurikulum Teknologi Listrik</a></li>
+                        <li><a href="email-read.html">Kurikulum Pordi Teknologi Informasi</a></li>
+                        <li><a href="email-read.html">Kurikulum Prodi Teknologi Listrik</a></li>
                     </ul>
                 </li>
 
                 <li>
-                    <a href="calendar.html" class=" waves-effect">
+                    <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <div class="d-inline-block icons-sm me-1"><i class="fas fa-newspaper"></i></div>
-                        <span>Berita Jurusan</span>
+                        <span>Berita</span>
+                    </a>
+                    <ul class="sub-menu" aria-expanded="false">
+                        <li><a href="berita-jurusan">Berita Jurusan</a></li>
+                        <li><a href="berita-penelitian">Berita Penelitian</a></li>
+                        <li><a href="berita-pengabdian">Berita Pengabdian</a></li>
+                        <li><a href="berita-pbl">Berita PBL</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="dashboard" class="waves-effect">
+                        <div class="d-inline-block icons-sm me-1"><i class="fas fa-user-graduate"></i></div><span class="badge rounded-pill text-bg-success float-end"></span>
+                        <span>Kegiatan Mahasiswa</span>
                     </a>
                 </li>
 
