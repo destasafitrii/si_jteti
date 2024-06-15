@@ -55,7 +55,7 @@ class VisitlController extends Controller
     public function update(Request $request, $id)
     {
         $request->validate([
-            'visi' => 'required|string|max:255',
+            'visi' => 'required|string',
             'misi' => 'required|string',
         ]);
 
