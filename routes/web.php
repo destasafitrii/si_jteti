@@ -18,6 +18,7 @@ use App\Http\Controllers\BeritajurusanController;
 use App\Http\Controllers\BeritapenelitianController;
 use App\Http\Controllers\BeritapengabdianController;
 use App\Http\Controllers\BeritapblController;
+use App\Http\Controllers\KegiatanmahasiswaController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -124,4 +125,5 @@ Route::prefix('/admin')->group(function () {
     Route::resource('berita-penelitian', BeritapenelitianController::class);
     Route::resource('berita-pengabdian', BeritapengabdianController::class);
     Route::resource('berita-pbl', BeritapblController::class);
+    Route::resource('kegiatan-mahasiswa', KegiatanmahasiswaController::class);
 });

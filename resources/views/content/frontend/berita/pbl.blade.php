@@ -11,7 +11,7 @@
                         <li><a href="index.html">berita</a><span>|</span></li>
                         <li>jurusan</li>
                     </ul>
-                    <h1>PBL</h1>
+                    <h1>Project Base Learning</h1>
                 </div>
             </div>
         </div>

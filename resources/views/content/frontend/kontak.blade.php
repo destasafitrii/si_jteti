@@ -41,6 +41,7 @@
                         {{-- <span>Keeping you always better connected.</span> --}}
                         <p><a href="tel:+125(895)658568">+125 (895) 658 568</a></p>
                         <p><a href="tel:+125(874)452645">+125 (874) 452 645</a></p>
+                        <p><a href="tel:+125(874)452645">+125 (874) 452 645</a></p>
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.2s">
@@ -50,8 +51,9 @@
 						</div>
                         <h4>Email</h4>
                         {{-- <span>Drop us a mail we will answer you asap.</span> --}}
-                        <p><a href="mailto:info.conbix@gmail.com">info.conbix@gmail.com</a></p>
                         <p><a href="mailto:conbix@gmail.com">conbix@gmail.com</a></p>
+                        <p><a href="mailto:teknikelektro@politap.ac.id">teknikelektro@politap.ac.id</a></p>
+                        <p><a href="mailto:teknikinformatika@politap.ac.id">teknikinformatika@politap.ac.id</a></p>
 					</div>
 				</div>
 			</div>

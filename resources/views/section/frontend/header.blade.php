@@ -71,11 +71,11 @@
                             <ul class="sub-menu">
                                 <li><a href="berita">Berita Jurusan</a></li>
                                 </li>
-                                <li><a href="penelitian">Penelitian</a></li>
+                                <li><a href="penelitian">Berita Penelitian</a></li>
                                 </li>
-                                <li><a href="pengabdian">Pengabdian</a></li>
+                                <li><a href="pengabdian">Berita Pengabdian</a></li>
                                 </li>
-                                <li><a href="pbl">PBL</a></li>
+                                <li><a href="pbl">Berita PBL</a></li>
                                 </li>
                             </ul>
                         </li>

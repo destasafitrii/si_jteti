@@ -78,7 +78,7 @@
                     </ul>
                 </li>
                 <li>
-                    <a href="dashboard" class="waves-effect">
+                    <a href="kegiatan-mahasiswa" class="waves-effect">
                         <div class="d-inline-block icons-sm me-1"><i class="fas fa-user-graduate"></i></div><span class="badge rounded-pill text-bg-success float-end"></span>
                         <span>Kegiatan Mahasiswa</span>
                     </a>
