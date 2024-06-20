@@ -21,20 +21,20 @@
                                 <li><a href="pimpinan">Pimpinan</a></li>
                                 <li class="menu-item-has-children"><a href="#">Visi dan Misi</a>
                                     <ul class="sub-menu">
-                                        <li><a href="visimisi_ti">Prodi Teknologi Informasi</a></li>
-                                        <li><a href="visimisi_te">Prodi Teknologi Listrik</a></li>
+                                        <li><a href="visi-misi-ti">Prodi Teknologi Informasi</a></li>
+                                        <li><a href="visi-misi-te">Prodi Teknologi Listrik</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Dosen</a>
                                     <ul class="sub-menu">
-                                        <li><a href="dosen_ti">Prodi Teknologi Informasi</a></li>
-                                        <li><a href="dosen_te">Prodi Teknologi Listrik</a></li>
+                                        <li><a href="dosen-teknologi-informasi">Prodi Teknologi Informasi</a></li>
+                                        <li><a href="dosen-teknologi-listrik">Prodi Teknologi Listrik</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children"><a href="#">Teknisi</a>
                                     <ul class="sub-menu">
-                                        <li><a href="teknisi_ti">Prodi Teknologi Informasi</a></li>
-                                        <li><a href="teknisi_te">Prodi Teknologi Listrik</a></li>
+                                        <li><a href="teknisi-teknologi-informasi">Prodi Teknologi Informasi</a></li>
+                                        <li><a href="teknisi-teknologi-listrik">Prodi Teknologi Listrik</a></li>
                                     </ul>
                                 </li>
                             </ul>

@@ -18,19 +18,23 @@
     </div>
 </div>    
 <!-- Page Banner Area End -->
+
+@foreach ($visitis as $visiti)
 <div class="news__details-left-box">
     <div class="news__details-left-box-shape">
-        <img src="assets/img/icon/blog.png" alt="">
+        <img src="{{ asset('assets/img/icon/blog.png') }}" alt="">
     </div>
     <h6>Visi</h6>
-    <p>Proin a metus auctor, sagittis sem non, sodales massa. Vestibulum volutpat tempus porttitor. Donec sollicitudin sollicitudin tristique. Nunc imperdiet nunc ipsum, auctor ullamcorper tellus auctor non</p>                                  
+    <p>{{ $visiti->visi }}</p>                                  
 </div>
 <div class="news__details-left-box">
     <div class="news__details-left-box-shape">
-        <img src="assets/img/icon/blog.png" alt="">
+        <img src="{{ asset('assets/img/icon/blog.png') }}" alt="">
     </div>
     <h6>Misi</h6>
-    <p>Proin a metus auctor, sagittis sem non, sodales massa. Vestibulum volutpat tempus porttitor. Donec sollicitudin sollicitudin tristique. Nunc imperdiet nunc ipsum, auctor ullamcorper tellus auctor non</p>                                  
+    <p>{{ $visiti->misi }}</p>                                  
 </div>
+@endforeach
+
 
 @endsection

@@ -22,126 +22,31 @@
 <div class="team__two section-padding">
     <div class="container">
         <div class="row">
+            @foreach($dosentls as $dosentl)
             <div class="col-xl-4 col-lg-4 col-md-6">
                 <div class="team__two-item">
                     <div class="team__two-item-image">
-                        <img src="frontend/assets/img/team/team-9.jpg" alt="">
+                        @if($dosentl->foto)
+                            <img src="{{ Storage::url('fotos/' . $dosentl->foto) }}" alt="{{ $dosentl->nama }}" style="width: 450px; height: 451px; object-fit: cover;">
+                        @else
+                            <img src="frontend/assets/img/team/default.jpg" alt="Default Foto" style="width: 450px; height: 451px; object-fit: cover;">
+                        @endif
                     </div>
                     <div class="team__two-item-content">
-                        <h4><a href="team-single.html">Steve Rhodes</a></h4>
-                        <span class="text-eight">CEO Founder</span>
+                        <h4>{{ $dosentl->nama }}</h4>
+                        <span class="text-eight">NIP: {{ $dosentl->nip }}</span><br>
+                        <span class="text-eight">NIDN: {{ $dosentl->nidn }}</span><br>
+                        <span class="text-two">{{ $dosentl->jabatan }}</span>
                         <div class="team__two-item-content-social">
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="team__two-item">
-                    <div class="team__two-item-image">
-                        <img src="frontend/assets/img/team/team-10.jpg" alt="">
-                    </div>
-                    <div class="team__two-item-content">
-                        <h4><a href="team-single.html">Cansn Mina</a></h4>
-                        <span class="text-eight">Sr. developer</span>
-                        <div class="team__two-item-content-social">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="team__two-item">
-                    <div class="team__two-item-image">
-                        <img src="frontend/assets/img/team/team-11.jpg" alt="">
-                    </div>
-                    <div class="team__two-item-content">
-                        <h4><a href="team-single.html">Freddie Mercury</a></h4>
-                        <span class="text-eight">Content Writer</span>
-                        <div class="team__two-item-content-social">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="team__two-item">
-                    <div class="team__two-item-image">
-                        <img src="frontend/assets/img/team/team-12.jpg" alt="">
-                    </div>
-                    <div class="team__two-item-content">
-                        <h4><a href="team-single.html">Balm Bayrak</a></h4>
-                        <span class="text-eight">Sr. Content Writer</span>
-                        <div class="team__two-item-content-social">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="team__two-item">
-                    <div class="team__two-item-image">
-                        <img src="frontend/assets/img/team/team-13.jpg" alt="">
-                    </div>
-                    <div class="team__two-item-content">
-                        <h4><a href="team-single.html">Courtney Henry</a></h4>
-                        <span class="text-eight">Sr. Consultant</span>
-                        <div class="team__two-item-content-social">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6">
-                <div class="team__two-item">
-                    <div class="team__two-item-image">
-                        <img src="frontend/assets/img/team/team-14.jpg" alt="">
-                    </div>
-                    <div class="team__two-item-content">
-                        <h4><a href="team-single.html">Derya Kurtulus</a></h4>
-                        <span class="text-eight">Project Manager</span>
-                        <div class="team__two-item-content-social">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-vimeo-v"></i></a></li>
-                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        @endforeach
         </div>
     </div>
 </div>

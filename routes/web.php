@@ -4,11 +4,17 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PimpinanController;
 use App\Http\Controllers\PimpinanWebController;
 use App\Http\Controllers\VisitiController;
+use App\Http\Controllers\VisitiWebController;
 use App\Http\Controllers\VisitlController;
+use App\Http\Controllers\VisitlWebController;
 use App\Http\Controllers\DosentiController;
+use App\Http\Controllers\DosentiWebController;
 use App\Http\Controllers\DosentlController;
+use App\Http\Controllers\DosentlWebController;
 use App\Http\Controllers\TeknisitiController;
+use App\Http\Controllers\TeknisitiWebController;
 use App\Http\Controllers\TeknisitlController;
+use App\Http\Controllers\TeknisitlWebController;
 use App\Http\Controllers\LaboratoriumController;
 use App\Http\Controllers\RuangkelasController;
 use App\Http\Controllers\RuangmanajemenController;
@@ -33,9 +39,9 @@ use App\Http\Controllers\KegiatanmahasiswaController;
 Route::get('/beranda', function () {
     return view('content/frontend/beranda');
 });
-Route::get('/visimisi_ti', function () {
-    return view('content/frontend/profil/visimisi_ti');
-});
+// Route::get('/visimisi_ti', function () {
+//     return view('content/frontend/profil/visimisi_ti');
+// });
 Route::get('/visimisi_te', function () {
     return view('content/frontend/profil/visimisi_te');
 });
@@ -105,7 +111,12 @@ Route::get('/admin/pimpinan', function () {
 //////////////////////////////
 // Routes for frontend
 Route::get('/pimpinan', [PimpinanWebController::class, 'index'])->name('frontend.pimpinan.index');
-
+Route::get('/visi-misi-ti', [VisitiWebController::class, 'index'])->name('frontend.visimisi_ti.index');
+Route::get('/visi-misi-te', [VisitlWebController::class, 'index'])->name('frontend.visimisi_te.index');
+Route::get('/dosen-teknologi-informasi', [DosentiWebController::class, 'index'])->name('frontend.dosen_ti.index');
+Route::get('/dosen-teknologi-listrik', [DosentlWebController::class, 'index'])->name('frontend.dosen_te.index');
+Route::get('/teknisi-teknologi-informasi', [TeknisitiWebController::class, 'index'])->name('frontend.teknisi_ti.index');
+Route::get('/teknisi-teknologi-listrik', [TeknisitlWebController::class, 'index'])->name('frontend.teknisi_te.index');
 // Routes for backend
 Route::prefix('/admin')->group(function () {
     Route::get('dashboard', function () {return view('content/backend/dashboard');});

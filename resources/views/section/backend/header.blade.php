@@ -27,12 +27,12 @@
             </button>
 
             <!-- App Search-->
-            <form class="app-search d-none d-lg-block">
+            {{-- <form class="app-search d-none d-lg-block">
                 <div class="position-relative mt-3">
                     <input type="text" class="form-control" placeholder="Search...">
                     <span class="mdi mdi-magnify"></span>
                 </div>
-            </form>
+            </form> --}}
         </div>
 
         <div class="d-flex">
