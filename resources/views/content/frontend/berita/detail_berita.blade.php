@@ -1,7 +1,8 @@
 @extends('template.frontend')
 @section('content')
 <!-- News Details Area Start -->
-<div class="news__details section-padding">
+<div class="news__details section-padding" style="padding: 40px 0px;
+">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-12">

@@ -43,9 +43,9 @@
                             <ul class="sub-menu">
                                 <li><a href="laboratorium">laboratorium</a></li>
                                 </li>
-                                <li><a href="ruang_kelas">Ruang Kelas</a></li>
+                                <li><a href="ruang-kelas">Ruang Kelas</a></li>
                                 </li>
-                                <li><a href="ruang_manajemen">Ruang Manajemen</a></li>
+                                <li><a href="ruang-manajemen">Ruang Manajemen</a></li>
                                 </li>
                             </ul>
                         </li>
@@ -69,13 +69,13 @@
                         </li> --}}
                         <li class="menu-item-has-children"><a href="berita">Berita</a>
                             <ul class="sub-menu">
-                                <li><a href="berita">Berita Jurusan</a></li>
+                                <li><a href="berita-jurusan">Berita Jurusan</a></li>
                                 </li>
-                                <li><a href="penelitian">Berita Penelitian</a></li>
+                                <li><a href="berita-penelitian">Berita Penelitian</a></li>
                                 </li>
-                                <li><a href="pengabdian">Berita Pengabdian</a></li>
+                                <li><a href="berita-pengabdian">Berita Pengabdian</a></li>
                                 </li>
-                                <li><a href="pbl">Berita PBL</a></li>
+                                <li><a href="berita-pbl">Berita PBL</a></li>
                                 </li>
                             </ul>
                         </li>

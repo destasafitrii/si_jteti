@@ -16,15 +16,23 @@ use App\Http\Controllers\TeknisitiWebController;
 use App\Http\Controllers\TeknisitlController;
 use App\Http\Controllers\TeknisitlWebController;
 use App\Http\Controllers\LaboratoriumController;
+use App\Http\Controllers\LaboratoriumWebController;
 use App\Http\Controllers\RuangkelasController;
+use App\Http\Controllers\RuangkelasWebController;
 use App\Http\Controllers\RuangmanajemenController;
+use App\Http\Controllers\RuangmanajemenWebController;
 use App\Http\Controllers\AkreditasitiController;
 use App\Http\Controllers\AkreditasitlController;
 use App\Http\Controllers\BeritajurusanController;
+use App\Http\Controllers\BeritajurusanWebController;
 use App\Http\Controllers\BeritapenelitianController;
+use App\Http\Controllers\BeritapenelitianWebController;
 use App\Http\Controllers\BeritapengabdianController;
+use App\Http\Controllers\BeritapengabdianWebController;
 use App\Http\Controllers\BeritapblController;
+use App\Http\Controllers\BeritapblWebController;
 use App\Http\Controllers\KegiatanmahasiswaController;
+use App\Http\Controllers\KegiatanmahasiswaWebController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -117,6 +125,14 @@ Route::get('/dosen-teknologi-informasi', [DosentiWebController::class, 'index'])
 Route::get('/dosen-teknologi-listrik', [DosentlWebController::class, 'index'])->name('frontend.dosen_te.index');
 Route::get('/teknisi-teknologi-informasi', [TeknisitiWebController::class, 'index'])->name('frontend.teknisi_ti.index');
 Route::get('/teknisi-teknologi-listrik', [TeknisitlWebController::class, 'index'])->name('frontend.teknisi_te.index');
+Route::get('/laboratorium', [LaboratoriumWebController::class, 'index'])->name('frontend.laboratorium.index');
+Route::get('/ruang-kelas', [RuangkelasWebController::class, 'index'])->name('frontend.ruang_kelas.index');
+Route::get('/ruang-manajemen', [RuangmanajemenWebController::class, 'index'])->name('frontend.ruang_manajemen.index');
+Route::get('/berita-jurusan', [BeritajurusanWebController::class, 'index'])->name('frontend.berita_jurusan.index');
+Route::get('/berita-penelitian', [BeritapenelitianWebController::class, 'index'])->name('frontend.berita_penelitian.index');
+Route::get('/berita-pengabdian', [BeritapengabdianWebController::class, 'index'])->name('frontend.berita_pengabdian.index');
+Route::get('/berita-pbl', [BeritapblWebController::class, 'index'])->name('frontend.berita_pbl.index');
+Route::get('/beranda', [KegiatanmahasiswaWebController::class, 'index'])->name('frontend.beranda.index');
 // Routes for backend
 Route::prefix('/admin')->group(function () {
     Route::get('dashboard', function () {return view('content/backend/dashboard');});

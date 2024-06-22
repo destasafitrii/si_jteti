@@ -122,11 +122,12 @@
             <div class="col-xl-12">
                 <div class="swiper portfolio__area-slider">
                     <div class="swiper-wrapper">
+                        @foreach ($kegiatanmahasiswas as $kegiatanmahasiswa)
                         <div class="portfolio__area-item swiper-slide">
-                            <img src="frontend/assets/img/portfolio/portfolio-1.jpg" alt="">
+                            <img src="{{ Storage::url('fotos/' . $kegiatanmahasiswa->foto) }}" alt="{{ $kegiatanmahasiswa->judul }}" style="width: 500px; height: 400px; object-fit: cover;">
                             <div class="portfolio__area-item-content">
                                 <div class="portfolio__area-item-content-title">
-                                    <h4><a href="project-single.html">Business strategy</a></h4>
+                                    <h4><a href="project-single.html">{{ $kegiatanmahasiswa->judul }}</a></h4>
                                     <span class="text-eight">Conbix Agency</span>
                                 </div>
                                 <div class="portfolio__area-item-content-icon">
@@ -134,42 +135,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="portfolio__area-item swiper-slide">
-                            <img src="frontend/assets/img/portfolio/portfolio-2.jpg" alt="">
-                            <div class="portfolio__area-item-content">
-                                <div class="portfolio__area-item-content-title">
-                                    <h4><a href="project-single.html">Digital Consulting</a></h4>
-                                    <span class="text-eight">Conbix Agency</span>
-                                </div>
-                                <div class="portfolio__area-item-content-icon">
-                                    <a href="project-single.html"><img src="frontend/assets/img/icon/up-arrow.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio__area-item swiper-slide">
-                            <img src="frontend/assets/img/portfolio/portfolio-3.jpg" alt="">
-                            <div class="portfolio__area-item-content">
-                                <div class="portfolio__area-item-content-title">
-                                    <h4><a href="project-single.html">Human Resource</a></h4>
-                                    <span class="text-eight">Conbix Agency</span>
-                                </div>
-                                <div class="portfolio__area-item-content-icon">
-                                    <a href="project-single.html"><img src="frontend/assets/img/icon/up-arrow.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio__area-item swiper-slide">
-                            <img src="frontend/assets/img/portfolio/portfolio-4.jpg" alt="">
-                            <div class="portfolio__area-item-content">
-                                <div class="portfolio__area-item-content-title">
-                                    <h4><a href="project-single.html">Business Consulting</a></h4>
-                                    <span class="text-eight">Conbix Agency</span>
-                                </div>
-                                <div class="portfolio__area-item-content-icon">
-                                    <a href="project-single.html"><img src="frontend/assets/img/icon/up-arrow.png" alt=""></a>
-                                </div>
-                            </div>
-                        </div>
+                    @endforeach
                     </div>
                 </div>
             </div>
