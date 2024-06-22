@@ -53,8 +53,8 @@
                             <ul class="sub-menu">
                                 <li class="menu-item-has-children"><a href="#">Akreditasi</a>
                                     <ul class="sub-menu">
-                                        <li><a href="akreditasi_ti">Prodi Teknologi Informasi</a></li>
-                                        <li><a href="akreditasi_te">Prodi Teknologi Listrik</a></li>
+                                        <li><a href="akreditasi-teknologi-informasi">Prodi Teknologi Informasi</a></li>
+                                        <li><a href="akreditasi-teknologi-listrik">Prodi Teknologi Listrik</a></li>
                                     </ul>
                                     <li class="menu-item-has-children"><a href="#">Kurikulum</a>
                                         <ul class="sub-menu">

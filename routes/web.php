@@ -22,6 +22,7 @@ use App\Http\Controllers\RuangkelasWebController;
 use App\Http\Controllers\RuangmanajemenController;
 use App\Http\Controllers\RuangmanajemenWebController;
 use App\Http\Controllers\AkreditasitiController;
+use App\Http\Controllers\AkreditasitiWebController;
 use App\Http\Controllers\AkreditasitlController;
 use App\Http\Controllers\BeritajurusanController;
 use App\Http\Controllers\BeritajurusanWebController;
@@ -133,6 +134,7 @@ Route::get('/berita-penelitian', [BeritapenelitianWebController::class, 'index']
 Route::get('/berita-pengabdian', [BeritapengabdianWebController::class, 'index'])->name('frontend.berita_pengabdian.index');
 Route::get('/berita-pbl', [BeritapblWebController::class, 'index'])->name('frontend.berita_pbl.index');
 Route::get('/beranda', [KegiatanmahasiswaWebController::class, 'index'])->name('frontend.beranda.index');
+Route::get('/akreditasi-teknologi-informasi', [AkreditasitiWebController::class, 'index'])->name('frontend.akreditasi_ti.index');
 // Routes for backend
 Route::prefix('/admin')->group(function () {
     Route::get('dashboard', function () {return view('content/backend/dashboard');});
