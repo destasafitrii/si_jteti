@@ -154,7 +154,7 @@
                 </div>
             </div>
             <div class="col-xl-5 col-lg-4 t-right lg-t-center">
-                <a class="btn-two" href="berita">selengkapnya<i class="far fa-chevron-double-right"></i></a>
+                <a class="btn-two" href="berita-jurusan">selengkapnya<i class="far fa-chevron-double-right"></i></a>
             </div>
         </div>
         <div class="row">

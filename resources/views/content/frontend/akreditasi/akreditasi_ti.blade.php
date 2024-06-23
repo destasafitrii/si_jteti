@@ -56,7 +56,7 @@
                             @else
                                 <div class="company__history-area-items"
                                     style="
-                                padding-left: 104px;
+                                padding-left: 97px;
                             ">
                                     <div class="company__history-area-items-left order-last order-lg-first">
                                         <div class="company__history-area-items-left-content mb-50 xl-mb-30">
