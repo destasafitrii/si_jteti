@@ -158,22 +158,24 @@
             </div>
         </div>
         <div class="row">
+            @foreach ($beritajurusans as $beritajurusan)
             <div class="col-xl-4 col-lg-6 xl-mb-30">
                 <div class="blog__one-item">
                     <div class="blog__one-item-image">
-                        <a href="detail_berita"><img src="frontend/assets/img/blog/blog-1.jpg" alt=""></a>
+                        <a href="{{ route('berita_jurusan.show', $beritajurusan->id) }}"><img src="{{ Storage::url('fotos/' . $beritajurusan->foto) }}" style="width: 430px; height: 250px; object-fit: cover;" alt=""></a>
                         <div class="blog__one-item-image-date">
-                            <span class="text-three">23</span>
-                            <span class="text-five">Dec</span>
+                            <span class="text-three">{{ $beritajurusan->created_at->format('d') }}</span>
+                            <span class="text-five">{{ $beritajurusan->created_at->format('M') }}</span>
                         </div>
                     </div>
                     <div class="blog__one-item-content">
-                        <h4><a href="detail_berita">When a small business is just starting out,</a></h4>
-                        <p>Experts say some good first steps in starting business are researching</p>
+                        <h4><a href="{{ route('berita_jurusan.show', $beritajurusan->id) }}">{{ $beritajurusan->judul }}</a></h4>
+                        <p>{{ $beritajurusan->deskripsi }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6 lg-mb-30">
+            @endforeach
+            {{-- <div class="col-xl-4 col-lg-6 lg-mb-30">
                 <div class="blog__one-item">
                     <div class="blog__one-item-image">
                         <a href="detail_berita"><img src="frontend/assets/img/blog/blog-2.jpg" alt=""></a>
@@ -202,7 +204,7 @@
                         <p>Experts say some good first steps in starting business are researching</p>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>

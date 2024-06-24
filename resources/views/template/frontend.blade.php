@@ -12,21 +12,21 @@
 	<!-- Title of Site -->
 	<title>Jurusan Teknik Elektro dan Teknik Informatika</title>
 	<!-- Favicons -->
-	<link rel="icon" type="image/png" href="frontend/assets/img/logo-politap.png">
+	<link rel="icon" type="image/png" href="{{ asset('frontend/assets/img/logo-politap.png') }}">
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="frontend/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ asset('frontend/assets/css/bootstrap.min.css') }}">
 	<!-- Font Awesome CSS -->
-	<link rel="stylesheet" href="frontend/assets/css/all.css">
+	<link rel="stylesheet" href="{{ asset('frontend/assets/css/all.css') }}">
 	<!-- Animate CSS -->
-	<link rel="stylesheet" href="frontend/assets/css/animate.css">
+	<link rel="stylesheet" href="{{ asset('frontend/assets/css/animate.css') }}">
 	<!-- Swiper Bundle CSS -->
-	<link rel="stylesheet" href="frontend/assets/css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="{{ asset('frontend/assets/css/swiper-bundle.min.css') }}">
 	<!-- Magnific Popup CSS -->
-	<link rel="stylesheet" href="frontend/assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="{{ asset('frontend/assets/css/magnific-popup.css') }}">
 	<!-- Mean Menu CSS -->
-	<link rel="stylesheet" href="frontend/assets/css/meanmenu.min.css">
+	<link rel="stylesheet" href="{{ asset('frontend/assets/css/meanmenu.min.css') }}">
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="frontend/assets/sass/style.css"> 
+	<link rel="stylesheet" href="{{ asset('frontend/assets/sass/style.css') }}">
 </head>
 
 <body>
@@ -73,11 +73,11 @@
 	</div> --}}
 	<!-- Top Bar End -->
 	<!-- Header Area Start -->
-@include('section.frontend.header')
+	@include('section.frontend.header')
 	<!-- Header Area End -->	
-@yield('content')
+	@yield('content')
 	<!-- Footer Top Area Start -->
-@include('section.frontend.footer')	
+	@include('section.frontend.footer')	
 	<!-- Footer One Area End -->
 	<!-- Scroll Btn Start -->
 	<div class="scroll-up">
@@ -85,26 +85,26 @@
 	</div>
 	<!-- Scroll Btn End -->
 	<!-- Main JS -->
-	<script src="frontend/assets/js/jquery-3.6.0.min.js"></script>
+	<script src="{{ asset('frontend/assets/js/jquery-3.6.0.min.js') }}"></script>
 	<!-- Bootstrap JS -->
-	<script src="frontend/assets/js/bootstrap.min.js"></script>
+	<script src="{{ asset('frontend/assets/js/bootstrap.min.js') }}"></script>
 	<!-- Counter Up JS -->
-	<script src="frontend/assets/js/jquery.counterup.min.js"></script>
+	<script src="{{ asset('frontend/assets/js/jquery.counterup.min.js') }}"></script>
 	<!-- Popper JS -->
-	<script src="frontend/assets/js/popper.min.js"></script>
+	<script src="{{ asset('frontend/assets/js/popper.min.js') }}"></script>
 	<!-- Progressbar JS -->
-	<script src="frontend/assets/js/progressbar.min.js"></script>
+	<script src="{{ asset('frontend/assets/js/progressbar.min.js') }}"></script>
 	<!-- Magnific Popup JS -->
-	<script src="frontend/assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="{{ asset('frontend/assets/js/jquery.magnific-popup.min.js') }}"></script>
 	<!-- Swiper Bundle JS -->
-	<script src="frontend/assets/js/swiper-bundle.min.js"></script>
+	<script src="{{ asset('frontend/assets/js/swiper-bundle.min.js') }}"></script>
     <!-- Isotope JS -->
-	<script src="frontend/assets/js/isotope.pkgd.min.js"></script>
+	<script src="{{ asset('frontend/assets/js/isotope.pkgd.min.js') }}"></script>
 	<!-- Waypoints JS -->
-	<script src="frontend/assets/js/jquery.waypoints.min.js"></script>
+	<script src="{{ asset('frontend/assets/js/jquery.waypoints.min.js') }}"></script>
 	<!-- Mean Menu JS -->
-	<script src="frontend/assets/js/jquery.meanmenu.min.js"></script>
+	<script src="{{ asset('frontend/assets/js/jquery.meanmenu.min.js') }}"></script>
 	<!-- Custom JS -->
-	<script src="frontend/assets/js/custom.js"></script>
+	<script src="{{ asset('frontend/assets/js/custom.js') }}"></script>
 </body>
 </html>

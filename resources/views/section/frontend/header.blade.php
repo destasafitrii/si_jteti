@@ -3,83 +3,83 @@
         <div class="header__area-menubar">
             <div class="header__area-menubar-left">
                 <div class="header__area-menubar-left-logo">
-                    <a href="index.html"><img class="dark-n" src="frontend/assets/img/logo-poltek1.png" alt=""><img class="light-n" src="frontend/assets/img/logo-2.png" alt=""></a>
+                    <a href="/index.html"><img class="dark-n" src="{{ asset('frontend/assets/img/logo-poltek1.png')}}" alt=""><img class="light-n" src="{{ asset('frontend/assets/img/logo-2.png')}}" alt=""></a>
                 </div>
             </div>
             <div class="header__area-menubar-center">
                 <div class="header__area-menubar-center-menu menu-responsive">						
                     <ul id="mobilemenu">
-                        <li class="menu-item-has-children"><a href="beranda">Beranda</a>
+                        <li class="menu-item-has-children"><a href="/beranda">Beranda</a>
                             {{-- <ul class="sub-menu">
-                                <li><a href="index.html">Home 01</a></li>
-                                <li><a href="index-two.html">Home 02</a></li>								
-                                <li><a href="index-three.html">Home 03</a></li>								
+                                <li><a href="/index.html">Home 01</a></li>
+                                <li><a href="/index-two.html">Home 02</a></li>								
+                                <li><a href="/index-three.html">Home 03</a></li>								
                             </ul> --}}
                         </li>
-                        <li class="menu-item-has-children"><a href="#">Profil</a>
+                        <li class="menu-item-has-children"><a href="/#">Profil</a>
                             <ul class="sub-menu">
-                                <li><a href="pimpinan">Pimpinan</a></li>
-                                <li class="menu-item-has-children"><a href="#">Visi dan Misi</a>
+                                <li><a href="/pimpinan">Pimpinan</a></li>
+                                <li class="menu-item-has-children"><a href="/#">Visi dan Misi</a>
                                     <ul class="sub-menu">
-                                        <li><a href="visi-misi-ti">Prodi Teknologi Informasi</a></li>
-                                        <li><a href="visi-misi-te">Prodi Teknologi Listrik</a></li>
+                                        <li><a href="/visi-misi-ti">Prodi Teknologi Informasi</a></li>
+                                        <li><a href="/visi-misi-te">Prodi Teknologi Listrik</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">Dosen</a>
+                                <li class="menu-item-has-children"><a href="/#">Dosen</a>
                                     <ul class="sub-menu">
-                                        <li><a href="dosen-teknologi-informasi">Prodi Teknologi Informasi</a></li>
-                                        <li><a href="dosen-teknologi-listrik">Prodi Teknologi Listrik</a></li>
+                                        <li><a href="/dosen-teknologi-informasi">Prodi Teknologi Informasi</a></li>
+                                        <li><a href="/dosen-teknologi-listrik">Prodi Teknologi Listrik</a></li>
                                     </ul>
                                 </li>
-                                <li class="menu-item-has-children"><a href="#">Teknisi</a>
+                                <li class="menu-item-has-children"><a href="/#">Teknisi</a>
                                     <ul class="sub-menu">
-                                        <li><a href="teknisi-teknologi-informasi">Prodi Teknologi Informasi</a></li>
-                                        <li><a href="teknisi-teknologi-listrik">Prodi Teknologi Listrik</a></li>
+                                        <li><a href="/teknisi-teknologi-informasi">Prodi Teknologi Informasi</a></li>
+                                        <li><a href="/teknisi-teknologi-listrik">Prodi Teknologi Listrik</a></li>
                                     </ul>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item-has-children"><a href="#">Fasilitas</a>
+                        <li class="menu-item-has-children"><a href="/#">Fasilitas</a>
                             <ul class="sub-menu">
-                                <li><a href="laboratorium">laboratorium</a></li>
+                                <li><a href="/laboratorium">laboratorium</a></li>
                                 </li>
-                                <li><a href="ruang-kelas">Ruang Kelas</a></li>
+                                <li><a href="/ruang-kelas">Ruang Kelas</a></li>
                                 </li>
-                                <li><a href="ruang-manajemen">Ruang Manajemen</a></li>
+                                <li><a href="/ruang-manajemen">Ruang Manajemen</a></li>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item-has-children"><a href="#">Akademik</a>
+                        <li class="menu-item-has-children"><a href="/#">Akademik</a>
                             <ul class="sub-menu">
-                                <li class="menu-item-has-children"><a href="#">Akreditasi</a>
+                                <li class="menu-item-has-children"><a href="/#">Akreditasi</a>
                                     <ul class="sub-menu">
-                                        <li><a href="akreditasi-teknologi-informasi">Prodi Teknologi Informasi</a></li>
-                                        <li><a href="akreditasi-teknologi-listrik">Prodi Teknologi Listrik</a></li>
+                                        <li><a href="/akreditasi-teknologi-informasi">Prodi Teknologi Informasi</a></li>
+                                        <li><a href="/akreditasi-teknologi-listrik">Prodi Teknologi Listrik</a></li>
                                     </ul>
-                                    <li class="menu-item-has-children"><a href="#">Kurikulum</a>
+                                    <li class="menu-item-has-children"><a href="/#">Kurikulum</a>
                                         <ul class="sub-menu">
-                                            <li><a href="kurikulum_ti">Prodi Teknologi Informasi</a></li>
-                                            <li><a href="#">Prodi Teknologi Listrik</a></li>
+                                            <li><a href="/kurikulum_ti">Prodi Teknologi Informasi</a></li>
+                                            <li><a href="/#">Prodi Teknologi Listrik</a></li>
                                         </ul>
                                     </li>
                                 </li>
                             </ul>
                         </li>
-                        {{-- <li class="menu-item-has-children"><a href="berita">Kurikulum</a>
+                        {{-- <li class="menu-item-has-children"><a href="/berita">Kurikulum</a>
                         </li> --}}
-                        <li class="menu-item-has-children"><a href="berita">Berita</a>
+                        <li class="menu-item-has-children"><a href="/berita">Berita</a>
                             <ul class="sub-menu">
-                                <li><a href="berita-jurusan">Berita Jurusan</a></li>
+                                <li><a href="/berita-jurusan">Berita Jurusan</a></li>
                                 </li>
-                                <li><a href="berita-penelitian">Berita Penelitian</a></li>
+                                <li><a href="/berita-penelitian">Berita Penelitian</a></li>
                                 </li>
-                                <li><a href="berita-pengabdian">Berita Pengabdian</a></li>
+                                <li><a href="/berita-pengabdian">Berita Pengabdian</a></li>
                                 </li>
-                                <li><a href="berita-pbl">Berita PBL</a></li>
+                                <li><a href="/berita-pbl">Berita PBL</a></li>
                                 </li>
                             </ul>
                         </li>
-                        <li class="menu-item-has-children"><a href="kontak">Kontak</a>
+                        <li class="menu-item-has-children"><a href="/kontak">Kontak</a>
                         </li>
                     </ul>
                 </div>
@@ -99,16 +99,16 @@
                         </div>
                     </div> --}}
                     <div class="header__area-menubar-right-sidebar">
-                        <div class="header__area-menubar-right-sidebar-popup-icon"><img src="frontend/assets/img/icon/menu-1.png" alt=""></div>
+                        <div class="header__area-menubar-right-sidebar-popup-icon"><img src="{{ asset('frontend/assets/img/icon/menu-1.png')}}" alt=""></div>
                     </div>
                     <div class="header__area-menubar-right-box-btn">
-                        {{-- <a class="btn-one" href="request-quote.html">Request quote<i class="far fa-chevron-double-right"></i></a> --}}
+                        {{-- <a class="btn-one" href="/request-quote.html">Request quote<i class="far fa-chevron-double-right"></i></a> --}}
                     </div>
                     <!-- sidebar Menu Start -->
                     <div class="header__area-menubar-right-sidebar-popup">
                         <div class="sidebar-close-btn"><i class="fal fa-times"></i></div>
                         <div class="header__area-menubar-right-sidebar-popup-logo">
-                            <a href="index.html"> <img src="frontend/assets/img/logo-poltek2.png" alt=""> </a>
+                            <a href="/index.html"> <img src="{{ asset('frontend/assets/img/logo-poltek2.png')}}" alt=""> </a>
                         </div>
                         <p>Jurusan Teknik Elektro dan Teknik Informatika Politeknik Negeri Ketapang</p>
                         <div class="header__area-menubar-right-box-sidebar-popup-contact">
@@ -119,7 +119,7 @@
                                 </div>
                                 <div class="header__area-menubar-right-box-sidebar-popup-contact-item-content">
                                     <span>Telp</span>
-                                    <h6><a href="tel:+125(895)658568">+125 (895) 658 568</a></h6>
+                                    <h6><a href="/tel:+125(895)658568">+125 (895) 658 568</a></h6>
                                 </div>
                             </div>
                             <div class="header__area-menubar-right-box-sidebar-popup-contact-item">
@@ -128,7 +128,7 @@
                                 </div>
                                 <div class="header__area-menubar-right-box-sidebar-popup-contact-item-content">
                                     <span>Email</span>
-                                    <h6><a href="mailto:info.help@gmail.com">info.help@gmail.com</a></h6>
+                                    <h6><a href="/mailto:info.help@gmail.com">info.help@gmail.com</a></h6>
                                 </div>
                             </div>
                             {{-- <div class="header__area-menubar-right-box-sidebar-popup-contact-item">
@@ -137,16 +137,16 @@
                                 </div>
                                 <div class="header__area-menubar-right-box-sidebar-popup-contact-item-content">
                                     <span>Office Address</span>
-                                    <h6><a href="#">PV3M+X68 Welshpool United Kingdom</a></h6>
+                                    <h6><a href="/#">PV3M+X68 Welshpool United Kingdom</a></h6>
                                 </div>
                             </div> --}}
                         </div>
                         <div class="header__area-menubar-right-box-sidebar-popup-social">
                             <ul>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="/#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="/#"><i class="fab fa-behance"></i></a></li>
+                                <li><a href="/#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="/#"><i class="fab fa-linkedin-in"></i></a></li>
                             </ul>							
                         </div>
                     </div>

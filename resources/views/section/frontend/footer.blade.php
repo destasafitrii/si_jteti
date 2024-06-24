@@ -1,12 +1,12 @@
 <!-- Footer One Area Start -->
 <div class="footer__one">
-    <img class="footer__one-shape" src="frontend/assets/img/shape/footer-bg.png" alt="">
+    <img class="footer__one-shape" src="{{ asset('frontend/assets/img/shape/footer-bg.png')}}" alt="">
     <div class="container">
         <div class="row">
             <div class="col-xl-3 col-md-6 col-sm-7 xl-mb-30">
                 <div class="footer__one-widget">
                     <div class="footer__one-widget-about">
-                        <a href="#"><img src="frontend/assets/img/logo-poltek2.png" alt=""></a>
+                        <a href="#"><img src="{{ asset('frontend/assets/img/logo-poltek2.png')}}" alt=""></a>
                         <p>Jurusan Teknik Elekro dan Teknik Informatika Politeknik Negeri Ketapang</p>
                         <div class="footer__one-widget-about-social">
                             <ul>
