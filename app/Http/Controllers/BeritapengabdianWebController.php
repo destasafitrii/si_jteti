@@ -12,4 +12,10 @@ class BeritapengabdianWebController extends Controller
         $beritapengabdians = Beritapengabdian::all();
         return view('content.frontend.berita.berita_pengabdian', compact('beritapengabdians'));
     }
+
+    public function show($id)
+    {
+        $beritapengabdian = Beritapengabdian::findOrFail($id);
+        return view('content.frontend.berita.detail_berita_pengabdian', compact('beritapengabdian'));
+    }
 }

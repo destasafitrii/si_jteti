@@ -12,4 +12,10 @@ class BeritapblWebController extends Controller
         $beritapbls = Beritapbl::all();
         return view('content.frontend.berita.berita_pbl', compact('beritapbls'));
     }
+
+    public function show($id)
+    {
+        $beritapbl = Beritapbl::findOrFail($id);
+        return view('content.frontend.berita.detail_berita_pbl', compact('beritapbl'));
+    }
 }

@@ -12,4 +12,10 @@ class BeritapenelitianWebController extends Controller
         $beritapenelitians = Beritapenelitian::all();
         return view('content.frontend.berita.berita_penelitian', compact('beritapenelitians'));
     }
+
+    public function show($id)
+    {
+        $beritapenelitian = Beritapenelitian::findOrFail($id);
+        return view('content.frontend.berita.detail_berita_penelitian', compact('beritapenelitian'));
+    }
 }

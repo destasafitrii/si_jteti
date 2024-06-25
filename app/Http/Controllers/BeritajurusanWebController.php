@@ -17,6 +17,6 @@ class BeritajurusanWebController extends Controller
     public function show($id)
     {
         $beritajurusan = Beritajurusan::findOrFail($id);
-        return view('content.frontend.berita.detail_berita', compact('beritajurusan'));
+        return view('content.frontend.berita.detail_berita_jurusan', compact('beritajurusan'));
     }
 }

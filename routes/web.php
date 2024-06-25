@@ -131,10 +131,13 @@ Route::get('/laboratorium', [LaboratoriumWebController::class, 'index'])->name('
 Route::get('/ruang-kelas', [RuangkelasWebController::class, 'index'])->name('frontend.ruang_kelas.index');
 Route::get('/ruang-manajemen', [RuangmanajemenWebController::class, 'index'])->name('frontend.ruang_manajemen.index');
 Route::get('/berita-jurusan', [BeritajurusanWebController::class, 'index'])->name('frontend.berita_jurusan.index');
-Route::get('/berita_jurusan/{id}', [BeritajurusanWebController::class, 'show'])->name('berita_jurusan.show');
+Route::get('/berita-jurusan/{id}', [BeritajurusanWebController::class, 'show'])->name('berita_jurusan.show');
 Route::get('/berita-penelitian', [BeritapenelitianWebController::class, 'index'])->name('frontend.berita_penelitian.index');
+Route::get('/berita-penelitian/{id}', [BeritapenelitianWebController::class, 'show'])->name('berita_penelitian.show');
 Route::get('/berita-pengabdian', [BeritapengabdianWebController::class, 'index'])->name('frontend.berita_pengabdian.index');
+Route::get('/berita-pengabdian/{id}', [BeritapengabdianWebController::class, 'show'])->name('berita_pengabdian.show');
 Route::get('/berita-pbl', [BeritapblWebController::class, 'index'])->name('frontend.berita_pbl.index');
+Route::get('/berita-pbl/{id}', [BeritapblWebController::class, 'show'])->name('berita_pbl.show');
 Route::get('/beranda', [BerandaController::class, 'index'])->name('frontend.beranda.index');
 Route::get('/akreditasi-teknologi-informasi', [AkreditasitiWebController::class, 'index'])->name('frontend.akreditasi_ti.index');
 Route::get('/akreditasi-teknologi-listrik', [AkreditasitlWebController::class, 'index'])->name('frontend.akreditasi_te.index');

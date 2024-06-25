@@ -26,13 +26,13 @@
             <div class="col-xl-4 col-lg-6 mb-30">
                 <div class="blog__two-item page">
                     <div class="blog__two-item-image">
-                        <a href="detail_berita"><img src="{{ Storage::url('fotos/' . $beritapengabdian->foto) }}"  style="width: 450px; height: 250px; object-fit: cover; alt=""></a>
+                        <a href="{{ route('berita_pengabdian.show', $beritapengabdian->id) }}"><img src="{{ Storage::url('fotos/' . $beritapengabdian->foto) }}"  style="width: 450px; height: 250px; object-fit: cover; alt=""></a>
                     </div>
                     <div class="blog__two-item-content">
                         <div class="blog__two-item-content-meta">
                         </div>
-                        <h4><a href="detail_berita">{{ $beritapengabdian->judul }}</a></h4>
-                        <a class="btn-six" href="detail_berita">Read More<i class="far fa-chevron-double-right"></i></a>
+                        <h4><a href="{{ route('berita_pengabdian.show', $beritapengabdian->id) }}">{{ $beritapengabdian->judul }}</a></h4>
+                        <a class="btn-six" href="{{ route('berita_pengabdian.show', $beritapengabdian->id) }}">Read More<i class="far fa-chevron-double-right"></i></a>
                     </div>
                 </div>
             </div>

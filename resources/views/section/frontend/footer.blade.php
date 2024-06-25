@@ -37,7 +37,7 @@
                     <div class="footer__one-widget-solution">
                         <ul>
                             <li><a href="pimpinan"><i class="far fa-chevron-double-right"></i>Pimpinan Jurusan</a></li>
-                            <li><a href="berita"><i class="far fa-chevron-double-right"></i>Berita Jurusan</a></li>
+                            <li><a href="berita-jurusan"><i class="far fa-chevron-double-right"></i>Berita Jurusan</a></li>
                         </ul>
                     </div>
                 </div>
