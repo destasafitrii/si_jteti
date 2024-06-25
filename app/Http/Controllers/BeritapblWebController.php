@@ -9,7 +9,7 @@ class BeritapblWebController extends Controller
 {
     public function index()
     {
-        $beritapbls = Beritapbl::all();
+        $beritapbls = Beritapbl::paginate(9);
         return view('content.frontend.berita.berita_pbl', compact('beritapbls'));
     }
 

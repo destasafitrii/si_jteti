@@ -42,11 +42,28 @@
             <div class="col-xl-12">
                 <div class="theme__pagination">
                     <ul>
-                        <li><a class="active" href="#">01</a></li>
-                        <li><a href="#">02</a></li>
-                        <li><a href="#"><i class="far fa-ellipsis-h"></i></a></li>
-                        <li><a href="#">05</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-double-right"></i></a></li>
+                        {{-- Previous Page Link --}}
+                        @if ($beritapengabdians->onFirstPage())
+                            <li class="disabled"><span><i class="fas fa-chevron-double-left"></i></span></li>
+                        @else
+                            <li><a href="{{ $beritapengabdians->previousPageUrl() }}"><i class="fas fa-chevron-double-left"></i></a></li>
+                        @endif
+
+                        {{-- Pagination Elements --}}
+                        @foreach ($beritapengabdians->getUrlRange(1, $beritapengabdians->lastPage()) as $page => $url)
+                            @if ($page == $beritapengabdians->currentPage())
+                                <li class="active"><span>{{ $page }}</span></li>
+                            @else
+                                <li><a href="{{ $url }}">{{ $page }}</a></li>
+                            @endif
+                        @endforeach
+
+                        {{-- Next Page Link --}}
+                        @if ($beritapengabdians->hasMorePages())
+                            <li><a href="{{ $beritapengabdians->nextPageUrl() }}"><i class="fas fa-chevron-double-right"></i></a></li>
+                        @else
+                            <li class="disabled"><span><i class="fas fa-chevron-double-right"></i></span></li>
+                        @endif
                     </ul>
                 </div>
             </div>                

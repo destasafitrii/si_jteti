@@ -10,7 +10,7 @@ class BeritajurusanWebController extends Controller
 {
     public function index()
     {
-        $beritajurusans = Beritajurusan::all();
+        $beritajurusans = Beritajurusan::paginate(9);
         return view('content.frontend.berita.berita_jurusan', compact('beritajurusans'));
     }
 

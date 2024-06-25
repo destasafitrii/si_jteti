@@ -12,4 +12,10 @@ class RuangmanajemenWebController extends Controller
         $ruangmanajemens = RuangManajemen::all();
         return view('content.frontend.fasilitas.ruang_manajemen', compact('ruangmanajemens'));
     }
+
+    public function show($id)
+    {
+        $ruangmanajemen = RuangManajemen::findOrFail($id);
+        return view('content.frontend.fasilitas.detail_ruang_manajemen', compact('ruangmanajemen'));
+    }
 }

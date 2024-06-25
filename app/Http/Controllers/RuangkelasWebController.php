@@ -12,4 +12,10 @@ class RuangkelasWebController extends Controller
         $ruangkelas = RuangKelas::all();
         return view('content.frontend.fasilitas.ruang_kelas', compact('ruangkelas'));
     }
+
+    public function show($id)
+    {
+        $ruangkelas = RuangKelas::findOrFail($id);
+        return view('content.frontend.fasilitas.detail_ruang_kelas', compact('ruangkelas'));
+    }
 }

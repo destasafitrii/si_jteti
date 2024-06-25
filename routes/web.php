@@ -111,7 +111,7 @@ Route::get('/detail_berita', function () {
     return view('content/frontend/berita/detail_berita');
 });
 Route::get('/detail_fasilitas', function () {
-    return view('content/frontend/fasilitas/detail_fasilitas');
+    return view('content/frontend/fasilitas/detail_laboratorium');
 });
 
 Route::get('/admin/pimpinan', function () {
@@ -128,8 +128,11 @@ Route::get('/dosen-teknologi-listrik', [DosentlWebController::class, 'index'])->
 Route::get('/teknisi-teknologi-informasi', [TeknisitiWebController::class, 'index'])->name('frontend.teknisi_ti.index');
 Route::get('/teknisi-teknologi-listrik', [TeknisitlWebController::class, 'index'])->name('frontend.teknisi_te.index');
 Route::get('/laboratorium', [LaboratoriumWebController::class, 'index'])->name('frontend.laboratorium.index');
+Route::get('/laboratorium/{id}', [LaboratoriumWebController::class, 'show'])->name('frontend.laboratorium.show');
 Route::get('/ruang-kelas', [RuangkelasWebController::class, 'index'])->name('frontend.ruang_kelas.index');
+Route::get('/ruang-kelas/{id}', [RuangkelasWebController::class, 'show'])->name('frontend.ruang_kelas.show');
 Route::get('/ruang-manajemen', [RuangmanajemenWebController::class, 'index'])->name('frontend.ruang_manajemen.index');
+Route::get('/ruang-manajemen/{id}', [RuangmanajemenWebController::class, 'show'])->name('frontend.ruang_manajemen.show');
 Route::get('/berita-jurusan', [BeritajurusanWebController::class, 'index'])->name('frontend.berita_jurusan.index');
 Route::get('/berita-jurusan/{id}', [BeritajurusanWebController::class, 'show'])->name('berita_jurusan.show');
 Route::get('/berita-penelitian', [BeritapenelitianWebController::class, 'index'])->name('frontend.berita_penelitian.index');

@@ -9,7 +9,7 @@ class BeritapengabdianWebController extends Controller
 {
     public function index()
     {
-        $beritapengabdians = Beritapengabdian::all();
+        $beritapengabdians = Beritapengabdian::paginate(9);
         return view('content.frontend.berita.berita_pengabdian', compact('beritapengabdians'));
     }
 

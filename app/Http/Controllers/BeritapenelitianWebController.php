@@ -9,7 +9,7 @@ class BeritapenelitianWebController extends Controller
 {
     public function index()
     {
-        $beritapenelitians = Beritapenelitian::all();
+        $beritapenelitians = Beritapenelitian::paginate(9);
         return view('content.frontend.berita.berita_penelitian', compact('beritapenelitians'));
     }
 

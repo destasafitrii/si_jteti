@@ -42,11 +42,28 @@
             <div class="col-xl-12">
                 <div class="theme__pagination">
                     <ul>
-                        <li><a class="active" href="#">01</a></li>
-                        <li><a href="#">02</a></li>
-                        <li><a href="#"><i class="far fa-ellipsis-h"></i></a></li>
-                        <li><a href="#">05</a></li>
-                        <li><a href="#"><i class="fas fa-chevron-double-right"></i></a></li>
+                        {{-- Previous Page Link --}}
+                        @if ($beritajurusans->onFirstPage())
+                            <li class="disabled"><span><i class="fas fa-chevron-double-left"></i></span></li>
+                        @else
+                            <li><a href="{{ $beritajurusans->previousPageUrl() }}"><i class="fas fa-chevron-double-left"></i></a></li>
+                        @endif
+
+                        {{-- Pagination Elements --}}
+                        @foreach ($beritajurusans->getUrlRange(1, $beritajurusans->lastPage()) as $page => $url)
+                            @if ($page == $beritajurusans->currentPage())
+                                <li class="active"><span>{{ $page }}</span></li>
+                            @else
+                                <li><a href="{{ $url }}">{{ $page }}</a></li>
+                            @endif
+                        @endforeach
+
+                        {{-- Next Page Link --}}
+                        @if ($beritajurusans->hasMorePages())
+                            <li><a href="{{ $beritajurusans->nextPageUrl() }}"><i class="fas fa-chevron-double-right"></i></a></li>
+                        @else
+                            <li class="disabled"><span><i class="fas fa-chevron-double-right"></i></span></li>
+                        @endif
                     </ul>
                 </div>
             </div>                

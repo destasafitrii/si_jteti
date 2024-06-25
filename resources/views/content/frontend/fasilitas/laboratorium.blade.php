@@ -27,11 +27,11 @@
                 <div class="project__area-item">
                     <img src="{{ Storage::url('fotos/' . $laboratorium->foto) }}"alt=""  style="width: 450px; height: 410px; object-fit: cover;">
                     <div class="project__area-item-content">
-                        <h4><a href="detail_fasilitas">{{ $laboratorium->nama }}</a></h4>
+                        <h4><a href="{{ route('frontend.laboratorium.show', $laboratorium->id) }}">{{ $laboratorium->nama }}</a></h4>
                         {{-- <span>Conbix Agency</span> --}}
                     </div>                        
                     <div class="project__area-item-icon">
-                        <a href="detail_fasilitas"><i class="far fa-arrow-right"></i></a>
+                        <a href="{{ route('frontend.laboratorium.show', $laboratorium->id) }}"><i class="far fa-arrow-right"></i></a>
                     </div>                                
                 </div>
             </div>
