@@ -73,7 +73,7 @@
             <div class="dropdown d-inline-block">
                 <button type="button" class="btn header-item user text-start d-flex align-items-center" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <img class="rounded-circle header-profile-user" src="{{ asset('backend/assets/images/users/destaa.jpg')}}" alt="Header Avatar">
-                    <span class="d-none d-sm-inline-block ms-1">Admin</span>
+                    <span class="d-none d-sm-inline-block ms-1"> {{ Auth::user()->name }} </span>
                     <i class="mdi mdi-chevron-down d-none d-sm-inline-block"></i>
                 </button>
                 <div class="dropdown-menu dropdown-menu-end ">
@@ -82,8 +82,16 @@
                     <a class="dropdown-item" href="#"><i class="mdi mdi-account-settings font-size-16 align-middle me-1"></i> Settings</a>
                     <a class="dropdown-item" href="#"><i class="mdi mdi-lock font-size-16 align-middle me-1"></i> Lock screen</a> --}}
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#"><i class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                    <a class="dropdown-item" href="{{ route('logout') }}" 
+                       onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                       <i class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout
+                    </a>
                 </div>
+            </div>
+            
             </div>
 
 
