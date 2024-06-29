@@ -60,7 +60,8 @@
                                                 <button class="btn btn-success d-block w-100 waves-effect waves-light" type="submit">Log In</button>
                                             </div>
                                             <div class="mt-4 text-center">
-                                                <a href="auth-register.html" class="text-muted"><i class="mdi mdi-account-circle me-1"></i> Create an account</a>
+                                                <a href="auth-register.html" class="text-muted">
+                                                <i class="mdi mdi-account-circle me-1"></i> Create an account</a>
                                             </div>
                                         </div>
                                     </div>
