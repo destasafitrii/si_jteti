@@ -22,7 +22,7 @@ class AuthController extends Controller
 
         return back()->withErrors([
             'email' => 'The provided credentials do not match our records.',
-        ]);
+        ])->with('error', 'Login gagal. Silakan periksa email dan kata sandi Anda.');
     }
 
     public function logout()
