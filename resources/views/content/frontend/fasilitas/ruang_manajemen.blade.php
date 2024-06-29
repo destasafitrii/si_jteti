@@ -1,7 +1,7 @@
 @extends('template.frontend')
 @section('content')
 <!-- Page Banner Area Start -->
-<div class="page__banner" data-background="frontend/assets/img/pages/page-banner.jpg" style="padding-bottom: 144px;">
+<div class="page__banner" data-background="frontend/assets/img/banner/back.beranda.jpg" style="padding-bottom: 144px;">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">

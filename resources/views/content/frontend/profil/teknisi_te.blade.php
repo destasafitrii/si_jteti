@@ -1,7 +1,7 @@
 @extends('template.frontend')
 @section('content')
 <!-- Page Banner Area Start -->
-<div class="page__banner" data-background="frontend/assets/img/pages/page-banner.jpg">
+<div class="page__banner" data-background="frontend/assets/img/banner/back.beranda.jpg">
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -36,12 +36,6 @@
                         <h4>{{ $teknisitl->nama }}</h4>
                         <span class="text-eight">NIP: {{ $teknisitl->nip }}</span><br>
                         <span class="text-two">{{ $teknisitl->jabatan }}</span>
-                        <div class="team__two-item-content-social">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                                <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -11,24 +11,6 @@
                         <li class="breadcrumb-item active">Visi Misi Teknologi Listrik</li>
                     </ol>
                 </div>
-                <div class="col-md-4">
-                    <div class="float-end d-none d-md-block">
-                        <div class="dropdown d-inline-block">
-                            <button type="button"
-                                class="btn btn-light rounded-pill user text-start d-flex align-items-center"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <i class="mdi mdi-settings-outline me-1"></i> Settings
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-end">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

@@ -40,10 +40,10 @@
             </div>
         </div>
     </div>
-    <div class="banner__two-arrow">
+    {{-- <div class="banner__two-arrow">
         <div class="banner__two-arrow-prev swiper-button-prev"><i class="fal fa-long-arrow-left"></i></div>
         <div class="banner__two-arrow-next swiper-button-next"><i class="fal fa-long-arrow-right"></i></div>
-    </div>		
+    </div>		 --}}
 </div>
 <!-- Banner Area End --> 
 <!-- Consulting Area Start -->
@@ -127,12 +127,12 @@
                             <img src="{{ Storage::url('fotos/' . $kegiatanmahasiswa->foto) }}" alt="{{ $kegiatanmahasiswa->judul }}" style="width: 500px; height: 400px; object-fit: cover;">
                             <div class="portfolio__area-item-content">
                                 <div class="portfolio__area-item-content-title">
-                                    <h4><a href="project-single.html">{{ $kegiatanmahasiswa->judul }}</a></h4>
-                                    <span class="text-eight">Conbix Agency</span>
+                                    <h4>{{ $kegiatanmahasiswa->judul }}</h4>
+                                    {{-- <span class="text-eight">Conbix Agency</span> --}}
                                 </div>
-                                <div class="portfolio__area-item-content-icon">
+                                {{-- <div class="portfolio__area-item-content-icon">
                                     <a href="project-single.html"><img src="frontend/assets/img/icon/up-arrow.png" alt=""></a>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     @endforeach
@@ -144,7 +144,7 @@
 </div>
 <!-- Portfolio Area End -->
 <!-- Blog Area Start -->
-<div class="blog__one dark__image section-padding">
+<div class="blog__one dark__image section-padding" style="padding: 50px 0">
     <div class="container">
         <div class="row align-items-end mb-70">
             <div class="col-xl-7 col-lg-8 lg-mb-30">
@@ -175,38 +175,122 @@
                 </div>
             </div>
             @endforeach
-            {{-- <div class="col-xl-4 col-lg-6 lg-mb-30">
+        </div>
+    </div>
+</div>
+<!-- Blog Area End -->
+
+<!-- Blog Area Start -->
+<div class="blog__one dark__image section-padding" style="padding: 50px 0">
+    <div class="container">
+        <div class="row align-items-end mb-70">
+            <div class="col-xl-7 col-lg-8 lg-mb-30">
+                <div class="blog__one-title lg-t-center">
+                    <span class="subtitle-one">Berita Penelitian</span>
+                    <h2>Jurusan Teknik Elektro dan Teknik Informatika</h2>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-4 t-right lg-t-center">
+                <a class="btn-two" href="berita-penelitian">selengkapnya<i class="far fa-chevron-double-right"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            @foreach ($beritapenelitians as $beritapenelitian)
+            <div class="col-xl-4 col-lg-6 xl-mb-30">
                 <div class="blog__one-item">
                     <div class="blog__one-item-image">
-                        <a href="detail_berita"><img src="frontend/assets/img/blog/blog-2.jpg" alt=""></a>
+                        <a href="{{ route('berita_jurusan.show', $beritapenelitian->id) }}"><img src="{{ Storage::url('fotos/' . $beritapenelitian->foto) }}" style="width: 430px; height: 250px; object-fit: cover;" alt=""></a>
                         <div class="blog__one-item-image-date">
-                            <span class="text-three">20</span>
-                            <span class="text-five">Dec</span>
+                            <span class="text-three">{{ $beritapenelitian->created_at->format('d') }}</span>
+                            <span class="text-five">{{ $beritapenelitian->created_at->format('M') }}</span>
                         </div>
                     </div>
                     <div class="blog__one-item-content">
-                        <h4><a href="detail_berita">Finances and accounting are one of the hardest</a></h4>
-                        <p>Experts say some good first steps in starting business are researching</p>
+                        <h4><a href="{{ route('berita_jurusan.show', $beritapenelitian->id) }}">{{ $beritapenelitian->judul }}</a></h4>
+                        <p>{{ $beritapenelitian->deskripsi }}</p>
                     </div>
                 </div>
             </div>
-            <div class="col-xl-4 col-lg-6">
+            @endforeach
+        </div>
+    </div>
+</div>
+<!-- Blog Area End -->
+
+<!-- Blog Area Start -->
+<div class="blog__one dark__image section-padding" style="padding: 50px 0">
+    <div class="container">
+        <div class="row align-items-end mb-70">
+            <div class="col-xl-7 col-lg-8 lg-mb-30">
+                <div class="blog__one-title lg-t-center">
+                    <span class="subtitle-one">Berita Pengabdian</span>
+                    <h2>Jurusan Teknik Elektro dan Teknik Informatika</h2>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-4 t-right lg-t-center">
+                <a class="btn-two" href="berita-pengabdian">selengkapnya<i class="far fa-chevron-double-right"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            @foreach ($beritapengabdians as $beritapengabdian)
+            <div class="col-xl-4 col-lg-6 xl-mb-30">
                 <div class="blog__one-item">
                     <div class="blog__one-item-image">
-                        <a href="detail_berita"><img src="frontend/assets/img/blog/blog-3.jpg" alt=""></a>
+                        <a href="{{ route('berita_jurusan.show', $beritapengabdian->id) }}"><img src="{{ Storage::url('fotos/' . $beritapengabdian->foto) }}" style="width: 430px; height: 250px; object-fit: cover;" alt=""></a>
                         <div class="blog__one-item-image-date">
-                            <span class="text-three">17</span>
-                            <span class="text-five">Dec</span>
+                            <span class="text-three">{{ $beritapengabdian->created_at->format('d') }}</span>
+                            <span class="text-five">{{ $beritapengabdian->created_at->format('M') }}</span>
                         </div>
                     </div>
                     <div class="blog__one-item-content">
-                        <h4><a href="detail_berita">Despite the benefits of variety & opportunities,</a></h4>
-                        <p>Experts say some good first steps in starting business are researching</p>
+                        <h4><a href="{{ route('berita_jurusan.show', $beritapengabdian->id) }}">{{ $beritapengabdian->judul }}</a></h4>
+                        <p>{{ $beritapengabdian->deskripsi }}</p>
                     </div>
                 </div>
-            </div> --}}
+            </div>
+            @endforeach
+        </div>
+    </div>
+</div>
+<!-- Blog Area End -->
+
+<!-- Blog Area Start -->
+<div class="blog__one dark__image section-padding" style="padding: 50px 0">
+    <div class="container">
+        <div class="row align-items-end mb-70">
+            <div class="col-xl-7 col-lg-8 lg-mb-30">
+                <div class="blog__one-title lg-t-center">
+                    <span class="subtitle-one">Berita PBL</span>
+                    <h2>Jurusan Teknik Elektro dan Teknik Informatika</h2>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-4 t-right lg-t-center">
+                <a class="btn-two" href="berita-pbl">selengkapnya<i class="far fa-chevron-double-right"></i></a>
+            </div>
+        </div>
+        <div class="row">
+            @foreach ($beritapbls as $beritapbl)
+            <div class="col-xl-4 col-lg-6 xl-mb-30">
+                <div class="blog__one-item">
+                    <div class="blog__one-item-image">
+                        <a href="{{ route('berita_jurusan.show', $beritapbl->id) }}"><img src="{{ Storage::url('fotos/' . $beritapbl->foto) }}" style="width: 430px; height: 250px; object-fit: cover;" alt=""></a>
+                        <div class="blog__one-item-image-date">
+                            <span class="text-three">{{ $beritapbl->created_at->format('d') }}</span>
+                            <span class="text-five">{{ $beritapbl->created_at->format('M') }}</span>
+                        </div>
+                    </div>
+                    <div class="blog__one-item-content">
+                        <h4><a href="{{ route('berita_jurusan.show', $beritapbl->id) }}">{{ $beritapbl->judul }}</a></h4>
+                        <p>{{ $beritapbl->deskripsi }}</p>
+                    </div>
+                </div>
+            </div>
+            @endforeach
         </div>
     </div>
 </div>
 <!-- Blog Area End -->
 @endsection
+
+
+

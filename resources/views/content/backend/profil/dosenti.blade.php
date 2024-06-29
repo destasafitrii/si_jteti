@@ -11,7 +11,7 @@
                         <li class="breadcrumb-item active">Dosen Teknologi Informasi</li>
                     </ol>
                 </div>
-                <div class="col-md-4">
+                {{-- <div class="col-md-4">
                     <div class="float-end d-none d-md-block">
                         <div class="dropdown d-inline-block">
                             <button type="button"
@@ -28,7 +28,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </div>

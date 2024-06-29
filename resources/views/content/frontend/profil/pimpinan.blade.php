@@ -38,12 +38,12 @@
                                 <span class="text-eight">NIP: {{ $pimpinan->nip }}</span><br>
                                 <span class="text-eight">NIDN: {{ $pimpinan->nidn }}</span><br>
                                 <span class="text-two">{{ $pimpinan->jabatan }}</span>
-                                <div class="team__two-item-content-social">
+                                {{-- <div class="team__two-item-content-social">
                                     <ul>
                                         <li><a href="#"><i class="fab fa-instagram"></i></a></li>
                                         <li><a href="#"><i class="fab fa-tiktok"></i></a></li>
                                     </ul>
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
