@@ -36,6 +36,8 @@ use App\Http\Controllers\BeritapengabdianWebController;
 use App\Http\Controllers\BeritapblController;
 use App\Http\Controllers\BeritapblWebController;
 use App\Http\Controllers\KegiatanmahasiswaController;
+use App\Http\Controllers\AdminController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -172,4 +174,6 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::resource('berita-pengabdian', BeritapengabdianController::class);
     Route::resource('berita-pbl', BeritapblController::class);
     Route::resource('kegiatan-mahasiswa', KegiatanmahasiswaController::class);
+    Route::resource('operator', AdminController::class);
+    
 });

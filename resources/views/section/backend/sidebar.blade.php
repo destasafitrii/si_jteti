@@ -56,11 +56,11 @@
                         <span>Akademik</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="akreditasi-teknologi-informasi">Akreditasi Pordi Teknologi Informasi</a></li>
+                        <li><a href="akreditasi-teknologi-informasi">Akreditasi Prodi Teknologi Informasi</a></li>
                         <li><a href="akreditasi-teknologi-listrik">Akreditasi Prodi Teknologi Listrik</a></li>
                     </ul>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="email-read.html">Kurikulum Pordi Teknologi Informasi</a></li>
+                        <li><a href="email-read.html">Kurikulum Prodi Teknologi Informasi</a></li>
                         <li><a href="email-read.html">Kurikulum Prodi Teknologi Listrik</a></li>
                     </ul>
                 </li>
@@ -81,6 +81,12 @@
                     <a href="kegiatan-mahasiswa" class="waves-effect">
                         <div class="d-inline-block icons-sm me-1"><i class="fas fa-user-graduate"></i></div><span class="badge rounded-pill text-bg-success float-end"></span>
                         <span>Kegiatan Mahasiswa</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="operator" class="waves-effect">
+                        <div class="d-inline-block icons-sm me-1"><i class="fas fa-user"></i></div><span class="badge rounded-pill text-bg-success float-end"></span>
+                        <span>Admin</span>
                     </a>
                 </li>
 

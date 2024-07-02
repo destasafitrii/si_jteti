@@ -5,10 +5,10 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-8">
-                    <h4 class="page-title mb-1">Berita Jurusan</h4>
+                    <h4 class="page-title mb-1">Admin Operator Jurusan</h4>
                     <ol class="breadcrumb m-0">
-                        <li class="breadcrumb-item"><a href="javascript: void(0);">Berita</a></li>
-                        <li class="breadcrumb-item active">Berita Jurusan</li>
+                        <li class="breadcrumb-item"><a href="javascript: void(0);">Admin</a></li>
+                        <li class="breadcrumb-item active">Operator Jurusan</li>
                     </ol>
                 </div>
             </div>
@@ -22,8 +22,8 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="header-title">Data Berita Jurusan</h4>
-                            <p class="card-title-desc text-end"> 
+                            <h4 class="header-title">Data Operator Jurusan</h4>
+                            <p class="card-title-desc text-end">
                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
                                     data-bs-target="#addModal">+ Tambah Data</button>
                             </p>
@@ -31,64 +31,46 @@
                                 style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                                 <thead>
                                     <tr>
-                                        <th>Judul</th>
-                                        <th>Deskripsi</th>
-                                        <th>Foto</th>
+                                        <th>Nama</th>
+                                        <th>Email</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($beritajurusans as $beritajurusan)
+                                    @foreach ($users as $user)
                                         <tr>
-                                            <td>{{ $beritajurusan->judul }}</td>
-                                            <td>{{ $beritajurusan->deskripsi }}</td>
-                                            <td>
-                                                <div class="d-flex justify-content-center">
-                                                    @if ($beritajurusan->foto)
-                                                        <img src="{{ Storage::url('fotos/' . $beritajurusan->foto) }}"
-                                                            alt="Foto" width="50">
-                                                    @else
-                                                        Tidak ada foto
-                                                    @endif
-                                                </div>
-                                            </td>
+                                            <td>{{ $user->name }}</td>
+                                            <td>{{ $user->email }}</td>
                                             <td>
                                                 <div class="d-flex justify-content-center">
                                                     <button type="button" class="btn btn-info btn-sm mx-1"
                                                         data-bs-toggle="modal"
-                                                        data-bs-target="#showModal{{ $beritajurusan->id }}">Show</button>
+                                                        data-bs-target="#showModal{{ $user->id }}">Show</button>
                                                     <button type="button" class="btn btn-warning btn-sm mx-1"
                                                         data-bs-toggle="modal"
-                                                        data-bs-target="#editModal{{ $beritajurusan->id }}">Edit</button>
+                                                        data-bs-target="#editModal{{ $user->id }}">Edit</button>
                                                     <button type="button" class="btn btn-danger btn-sm mx-1"
                                                         data-bs-toggle="modal"
-                                                        data-bs-target="#deleteModal{{ $beritajurusan->id }}">Delete</button>
+                                                        data-bs-target="#deleteModal{{ $user->id }}">Delete</button>
                                                 </div>
                                             </td>
 
                                         </tr>
                                         <!-- Show Modal -->
-                                        <div class="modal fade bs-example-modal-center" id="showModal{{ $beritajurusan->id }}" tabindex="-1"
-                                            role="dialog" aria-labelledby="showModalLabel{{ $beritajurusan->id }}"
-                                            aria-hidden="true">
+                                        <div class="modal fade bs-example-modal-center" id="showModal{{ $user->id }}"
+                                            tabindex="-1" role="dialog"
+                                            aria-labelledby="showModalLabel{{ $user->id }}" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="showModalLabel{{ $beritajurusan->id }}">
-                                                            Detail Berita Jurusan</h5>
+                                                        <h5 class="modal-title" id="showModalLabel{{ $user->id }}">
+                                                            Detail Dosen Teknologi Informasi</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <p><strong>Judul:</strong> {{ $beritajurusan->judul }}</p>
-                                                        <p><strong>Deskripsi:</strong> {{ $beritajurusan->deskripsi }}</p>
-                                                        @if ($beritajurusan->foto)
-                                                            <p><strong>Foto:</strong></p>
-                                                            <img src="{{ Storage::url('fotos/' . $beritajurusan->foto) }}"
-                                                                alt="Foto" width="150">
-                                                        @else
-                                                            <p><strong>Foto:</strong> Tidak ada foto</p>
-                                                        @endif
+                                                        <p><strong>Nama:</strong> {{ $user->name }}</p>
+                                                        <p><strong>Email:</strong> {{ $user->email }}</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary waves-effect"
@@ -99,36 +81,31 @@
                                         </div>
 
                                         <!-- Edit Modal -->
-                                        <div class="modal fade bs-example-modal-center" id="editModal{{ $beritajurusan->id }}" tabindex="-1"
-                                            role="dialog" aria-labelledby="editModalLabel{{ $beritajurusan->id }}"
-                                            aria-hidden="true">
+                                        <div class="modal fade bs-example-modal-center" id="editModal{{ $user->id }}"
+                                            tabindex="-1" role="dialog"
+                                            aria-labelledby="editModalLabel{{ $user->id }}" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="editModalLabel{{ $beritajurusan->id }}">Edit
-                                                            Berita Jurusan</h5>
+                                                        <h5 class="modal-title" id="editModalLabel{{ $user->id }}">Edit
+                                                            Operator Jurusan</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <form action="{{ route('berita-jurusan.update', $beritajurusan->id) }}"
+                                                        <form action="{{ route('operator.update', $user->id) }}"
                                                             method="POST" enctype="multipart/form-data">
                                                             @csrf
                                                             @method('PUT')
                                                             <div class="form-group mb-4">
-                                                                <label class="mb-2" for="judul">Judul</label>
-                                                                <input id="judul" name="judul" class="form-control"
-                                                                    value="{{ $beritajurusan->judul }}" required>
+                                                                <label class="mb-2" for="name">Nama</label>
+                                                                <input id="name" name="name" class="form-control"
+                                                                    value="{{ $user->name }}" required>
                                                             </div>
                                                             <div class="form-group mb-4">
-                                                                <label class="mb-2" for="deskripsi">Deskripsi</label>
-                                                                <input id="deskripsi" name="deskripsi" class="form-control"
-                                                                    value="{{ $beritajurusan->deskripsi }}" required>
-                                                            </div>
-                                                            <div class="form-group mb-4">
-                                                                <label class="mb-2" for="foto">Foto</label>
-                                                                <input type="file" id="foto" name="foto"
-                                                                    class="form-control">
+                                                                <label class="mb-2" for="email">Email</label>
+                                                                <input id="email" name="email" class="form-control"
+                                                                    value="{{ $user->email }}" required>
                                                             </div>
                                                             <div class="modal-footer">
                                                                 <button type="button" class="btn btn-secondary waves-effect"
@@ -144,80 +121,83 @@
 
                                         <!-- Delete Modal -->
                                         <div class="modal fade bs-example-modal-center"
-                                            id="deleteModal{{ $beritajurusan->id }}" tabindex="-1" role="dialog"
-                                            aria-labelledby="deleteModalLabel{{ $beritajurusan->id }}" aria-hidden="true">
+                                            id="deleteModal{{ $user->id }}" tabindex="-1" role="dialog"
+                                            aria-labelledby="deleteModalLabel{{ $user->id }}" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="deleteModalLabel{{ $beritajurusan->id }}">
-                                                            Delete Berita Jurusan</h5>
+                                                        <h5 class="modal-title" id="deleteModalLabel{{ $user->id }}">
+                                                            Delete Operator Jurusan</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <p>Apakah Anda Yakin menghapus Data Ini?</p>
+                                                        <p>Apakah Anda Yakin Menghapus Data Ini?</p>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button type="button" class="btn btn-secondary waves-effect"
                                                             data-bs-dismiss="modal" aria-label="Close">Close</button>
-                                                        <form action="{{ route('berita-jurusan.destroy', $beritajurusan->id) }}"
+                                                        <form action="{{ route('operator.destroy', $user->id) }}"
                                                             method="POST">
                                                             @csrf
                                                             @method('DELETE')
-                                                            <div>
-                                                                <button class="btn btn-danger waves-effect waves-light"
-                                                                    type="submit">Delete</button>
+                                                            <button class="btn btn-danger waves-effect waves-light"
+                                                                type="submit">Delete</button>
                                                         </form>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
+
                         </div>
                         @endforeach
                         </tbody>
                         </table>
 
                         <!-- Add Modal -->
-                        <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="addModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="addModal" tabindex="-1" role="dialog"
+                            aria-labelledby="addModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title" id="addModalLabel">Tambah Data Berita Jurusan</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <h5 class="modal-title" id="addModalLabel">Tambah Data Operator Jurusan
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
                                     </div>
-                                    <form action="{{ route('berita-jurusan.store') }}" method="POST" enctype="multipart/form-data">
-                                        @csrf
-                                        <div class="modal-body">
+                                    <div class="modal-body">
+                                        <form action="{{ route('operator.store') }}" method="POST"
+                                            enctype="multipart/form-data">
+                                            @csrf
                                             <div class="form-group mb-4">
-                                                <label class="mb-2" for="judul">Judul</label>
-                                                <input id="judul" name="judul" class="form-control" required>
+                                                <label class="mb-2" for="name">Nama</label>
+                                                <input id="name" name="name" class="form-control" required>
                                             </div>
-                        
                                             <div class="form-group mb-4">
-                                                <label class="mb-2" for="deskripsi">Deskripsi</label>
-                                                <input id="deskripsi" name="deskripsi" class="form-control" required>
+                                                <label class="mb-2" for="email">Email</label>
+                                                <input id="email" name="email" class="form-control" required>
                                             </div>
-                        
                                             <div class="form-group mb-4">
-                                                <label class="mb-2" for="foto">Foto</label>
-                                                <input type="file" id="foto" name="foto" class="form-control">
+                                                <label class="mb-2" for="password">Password</label>
+                                                <input id="password" name="password" class="form-control" required>
                                             </div>
-                                        </div>
-                                        
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                            <button type="submit" class="btn btn-primary">Submit</button>
-                                        </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary waves-effect"
+                                                    data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                                <button class="btn btn-primary waves-effect waves-light"
+                                                    type="submit">Submit</button>
+                                            </div>
+                                    </div>
                                     </form>
                                 </div>
                             </div>
                         </div>
-                        
-
                     </div>
-                    <!-- end col -->
-                </div> <!-- end row -->
-            </div>
-            <!-- end container-fluid -->
+
+                </div>
+                <!-- end col -->
+            </div> <!-- end row -->
         </div>
-    @endsection
+        <!-- end container-fluid -->
+    </div>
+@endsection

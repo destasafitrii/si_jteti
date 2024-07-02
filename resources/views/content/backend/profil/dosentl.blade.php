@@ -146,7 +146,9 @@
                                                                 <input type="file" id="foto" name="foto"
                                                                     class="form-control">
                                                             </div>
-                                                            <div class="d-flex justify-content-end align-items-end mt-4">
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary waves-effect"
+                                                                    data-bs-dismiss="modal" aria-label="Close">Close</button>
                                                                 <button class="btn btn-primary waves-effect waves-light"
                                                                     type="submit">Submit</button>
                                                             </div>

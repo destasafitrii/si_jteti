@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Login | Xoric - Responsive Bootstrap 4 Admin Dashboard</title>
+    <title>Login | Jurusan Teknik Elektro dan Teknik Informatika</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesdesign" name="author" />
-    <link rel="shortcut icon" href="{{ asset('backend/assets/images/favicon.ico')}}">
+    <link rel="shortcut icon" href="{{ asset('backend/assets/images/logo-politap.png')}}">
     <link href="{{ asset('backend/assets/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('backend/assets/css/icons.min.css')}}" rel="stylesheet" type="text/css" />
     <link href="{{ asset('backend/assets/css/app.min.css')}}" rel="stylesheet" type="text/css" />
@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="text-center mb-5">
-                        <a href="index.html" class="logo"><img src="{{ asset('backend/assets/images/logo-light.png')}}" height="24" alt="logo"></a>
+                        {{-- <a href="index.html" class="logo"><img src="{{ asset('backend/assets/images/logo-poltek1.png')}}" height="24" alt="logo"></a> --}}
                         <h5 class="font-size-16 text-white-50 mb-4">Website Sistem Informasi Jurusan Teknik Elektro dan Teknik Informatika</h5>
                     </div>
                 </div>

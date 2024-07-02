@@ -113,10 +113,10 @@
                                                                     <label class="mb-2" for="misi">Misi</label>
                                                                     <textarea id="misi" name="misi" class="form-control" required>{{ $visiti->misi }}</textarea>
                                                                 </div>
-                                                                <div
-                                                                    class="d-flex justify-content-end align-items-end mt-4">
-                                                                    <button
-                                                                        class="btn btn-primary waves-effect waves-light"
+                                                                <div class="modal-footer">
+                                                                    <button type="button" class="btn btn-secondary waves-effect"
+                                                                        data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                                                    <button class="btn btn-primary waves-effect waves-light"
                                                                         type="submit">Submit</button>
                                                                 </div>
                                                             </form>
