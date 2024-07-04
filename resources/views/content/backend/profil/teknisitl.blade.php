@@ -32,8 +32,10 @@
                                 <thead>
                                     <tr>
                                         <th>Nama</th>
-                                        <th>NIP</th>
+                                        <th>Email</th>
+                                        <th>NITK/NIK</th>
                                         <th>Jabatan</th>
+                                        <th>Keahlian</th>
                                         <th>Foto</th>
                                         <th>Aksi</th>
                                     </tr>
@@ -42,8 +44,10 @@
                                     @foreach ($teknisitls as $teknisitl)
                                         <tr>
                                             <td>{{ $teknisitl->nama }}</td>
+                                            <td>{{ $teknisitl->email }}</td>
                                             <td>{{ $teknisitl->nip }}</td>
                                             <td>{{ $teknisitl->jabatan }}</td>
+                                            <td>{{ $teknisitl->keahlian }}</td>
                                             <td>
                                                 <div class="d-flex justify-content-center">
                                                     @if ($teknisitl->foto)
@@ -83,8 +87,10 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <p><strong>Nama:</strong> {{ $teknisitl->nama }}</p>
-                                                        <p><strong>NIP:</strong> {{ $teknisitl->nip }}</p>
+                                                        <p><strong>Email:</strong> {{ $teknisitl->email }}</p>
+                                                        <p><strong>NITK/NIK:</strong> {{ $teknisitl->nip }}</p>
                                                         <p><strong>Jabatan:</strong> {{ $teknisitl->jabatan }}</p>
+                                                        <p><strong>Keahlian:</strong> {{ $teknisitl->keahlian }}</p>
                                                         @if ($teknisitl->foto)
                                                             <p><strong>Foto:</strong></p>
                                                             <img src="{{ Storage::url('fotos/' . $teknisitl->foto) }}"
@@ -124,7 +130,12 @@
                                                                     value="{{ $teknisitl->nama }}" required>
                                                             </div>
                                                             <div class="form-group mb-4">
-                                                                <label class="mb-2" for="nip">NIP</label>
+                                                                <label class="mb-2" for="email">Email</label>
+                                                                <input id="email" name="email" class="form-control"
+                                                                    value="{{ $teknisitl->email }}" required>
+                                                            </div>
+                                                            <div class="form-group mb-4">
+                                                                <label class="mb-2" for="nip">NITK/NIK</label>
                                                                 <input id="nip" name="nip" class="form-control"
                                                                     value="{{ $teknisitl->nip }}" required>
                                                             </div>
@@ -132,6 +143,11 @@
                                                                 <label class="mb-2" for="jabatan">Jabatan</label>
                                                                 <input id="jabatan" name="jabatan" class="form-control"
                                                                     value="{{ $teknisitl->jabatan }}" required>
+                                                            </div>
+                                                            <div class="form-group mb-4">
+                                                                <label class="mb-2" for="keahlian">Keahlian</label>
+                                                                <input id="keahlian" name="keahlian" class="form-control"
+                                                                    value="{{ $teknisitl->keahlian }}" required>
                                                             </div>
                                                             <div class="form-group mb-4">
                                                                 <label class="mb-2" for="foto">Foto</label>
@@ -204,12 +220,20 @@
                                                 <input id="nama" name="nama" class="form-control" required>
                                             </div>
                                             <div class="form-group mb-4">
-                                                <label class="mb-2" for="nip">NIP</label>
+                                                <label class="mb-2" for="email">Email</label>
+                                                <input id="email" name="email" class="form-control" required>
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label class="mb-2" for="nip">NITK/NIK</label>
                                                 <input id="nip" name="nip" class="form-control" required>
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2" for="jabatan">Jabatan</label>
                                                 <input id="jabatan" name="jabatan" class="form-control" required>
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label class="mb-2" for="keahlian">Keahlian</label>
+                                                <input id="keahlian" name="keahlian" class="form-control" required>
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2" for="foto">Foto</label>

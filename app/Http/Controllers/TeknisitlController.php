@@ -29,12 +29,16 @@ class TeknisitlController extends Controller
             'nip' => 'required|string|max:255|unique:teknisitl',
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'jabatan' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255',
+            'keahlian' => 'required|string|max:255',
         ]);
 
         $teknisitl = new Teknisitl();
         $teknisitl->nama = $request->nama;
         $teknisitl->nip = $request->nip;
         $teknisitl->jabatan = $request->jabatan;
+        $teknisitl->email = $request->email;
+        $teknisitl->keahlian = $request->keahlian;
 
         if ($request->hasFile('foto')) {
             $fileName = time() . '.' . $request->foto->extension();
@@ -69,12 +73,16 @@ class TeknisitlController extends Controller
             'nip' => 'required|string|max:255|unique:teknisitl,nip,' . $id,
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'jabatan' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255',
+            'keahlian' => 'required|string|max:255',
         ]);
 
         $teknisitl = Teknisitl::findOrFail($id);
         $teknisitl->nama = $request->nama;
         $teknisitl->nip = $request->nip;
         $teknisitl->jabatan = $request->jabatan;
+        $teknisitl->email = $request->email;
+        $teknisitl->keahlian = $request->keahlian;
 
         if ($request->hasFile('foto')) {
             // Delete the old foto

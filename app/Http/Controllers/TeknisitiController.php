@@ -29,12 +29,16 @@ class TeknisitiController extends Controller
             'nip' => 'required|string|max:255|unique:teknisiti',
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'jabatan' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255',
+            'keahlian' => 'required|string|max:255',
         ]);
 
         $teknisiti = new Teknisiti();
         $teknisiti->nama = $request->nama;
         $teknisiti->nip = $request->nip;
         $teknisiti->jabatan = $request->jabatan;
+        $teknisiti->email = $request->email;
+        $teknisiti->keahlian = $request->keahlian;
 
         if ($request->hasFile('foto')) {
             $fileName = time() . '.' . $request->foto->extension();
@@ -69,12 +73,16 @@ class TeknisitiController extends Controller
             'nip' => 'required|string|max:255|unique:teknisiti,nip,' . $id,
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'jabatan' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255',
+            'keahlian' => 'required|string|max:255',
         ]);
 
         $teknisiti = Teknisiti::findOrFail($id);
         $teknisiti->nama = $request->nama;
         $teknisiti->nip = $request->nip;
         $teknisiti->jabatan = $request->jabatan;
+        $teknisiti->email = $request->email;
+        $teknisiti->keahlian = $request->keahlian;
 
         if ($request->hasFile('foto')) {
             // Delete the old foto

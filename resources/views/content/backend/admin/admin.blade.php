@@ -5,7 +5,7 @@
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-md-8">
-                    <h4 class="page-title mb-1">Admin Operator Jurusan</h4>
+                    <h4 class="page-title mb-1">Operator Jurusan</h4>
                     <ol class="breadcrumb m-0">
                         <li class="breadcrumb-item"><a href="javascript: void(0);">Admin</a></li>
                         <li class="breadcrumb-item active">Operator Jurusan</li>
@@ -64,7 +64,7 @@
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <h5 class="modal-title" id="showModalLabel{{ $user->id }}">
-                                                            Detail Dosen Teknologi Informasi</h5>
+                                                            Detail Operator Jurusan</h5>
                                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                             aria-label="Close"></button>
                                                     </div>

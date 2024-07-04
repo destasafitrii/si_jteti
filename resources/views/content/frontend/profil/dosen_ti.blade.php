@@ -27,20 +27,21 @@
                 <div class="team__two-item">
                     <div class="team__two-item-image">
                         @if($dosenti->foto)
-                            <img src="{{ Storage::url('fotos/' . $dosenti->foto) }}" alt="{{ $dosenti->nama }}" style="width: 450px; height: 451px; object-fit: cover;">
+                            <img src="{{ Storage::url('fotos/' . $dosenti->foto) }}" alt="{{ $dosenti->nama }}" style="width: 300px; height: 301px; object-fit: cover;">
                         @else
-                            <img src="frontend/assets/img/team/default.jpg" alt="Default Foto" style="width: 450px; height: 451px; object-fit: cover;">
+                            <img src="frontend/assets/img/team/default.jpg" alt="Default Foto" style="width: 300px; height: 301px; object-fit: cover;">
                         @endif
                     </div>
                     <div class="team__two-item-content">
                         <h4>{{ $dosenti->nama }}</h4>
-                        <span class="text-eight">NIP: {{ $dosenti->nip }}</span><br>
-                        <span class="text-eight">NIDN: {{ $dosenti->nidn }}</span><br>
-                        <span class="text-two">{{ $dosenti->jabatan }}</span>
+                        <span class="text-eight">NIDN/NIP: {{ $dosenti->nip }}</span><br>
+                        <span class="text-eight">Keahlian: {{ $dosenti->keahlian }}</span><br>
+                        <a href="mailto:{{ $dosenti->email }}" class="text-eight">{{ $dosenti->email }}</a><br>
+                        <span class="text-two">{{ $dosenti->jabatan }}</span><br>
                     </div>
                 </div>
             </div>
-        @endforeach
+            @endforeach
         </div>
     </div>
 </div>

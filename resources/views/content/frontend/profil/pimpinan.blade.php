@@ -28,15 +28,15 @@
                         <div class="team__two-item">
                             <div class="team__two-item-image">
                                 @if($pimpinan->foto)
-                                    <img src="{{ Storage::url('fotos/' . $pimpinan->foto) }}" alt="{{ $pimpinan->nama }}" style="width: 450px; height: 451px; object-fit: cover;">
+                                    <img src="{{ Storage::url('fotos/' . $pimpinan->foto) }}" alt="{{ $pimpinan->nama }}" style="width: 300px; height: 301px; object-fit: cover;">
                                 @else
-                                    <img src="frontend/assets/img/team/default.jpg" alt="Default Foto" style="width: 450px; height: 451px; object-fit: cover;">
+                                    <img src="frontend/assets/img/team/default.jpg" alt="Default Foto" style="width: 300px; height: 301px; object-fit: cover;">
                                 @endif
                             </div>
                             <div class="team__two-item-content">
                                 <h4>{{ $pimpinan->nama }}</h4>
                                 <span class="text-eight">NIP: {{ $pimpinan->nip }}</span><br>
-                                <span class="text-eight">NIDN: {{ $pimpinan->nidn }}</span><br>
+                                <span class="text-eight">NIK: {{ $pimpinan->nik }}</span><br>
                                 <span class="text-two">{{ $pimpinan->jabatan }}</span>
                                 {{-- <div class="team__two-item-content-social">
                                     <ul>

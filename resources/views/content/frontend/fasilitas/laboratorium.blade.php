@@ -25,7 +25,7 @@
             @foreach ($laboratorium as $laboratorium)
             <div class="col-xl-4 col-md-6 mb-30">
                 <div class="project__area-item">
-                    <img src="{{ Storage::url('fotos/' . $laboratorium->foto) }}"alt=""  style="width: 450px; height: 410px; object-fit: cover;">
+                    <img src="{{ Storage::url('fotos/' . $laboratorium->foto) }}"alt=""  style="width: 350px; height: 310px; object-fit: cover;">
                     <div class="project__area-item-content">
                         <h4><a href="{{ route('frontend.laboratorium.show', $laboratorium->id) }}">{{ $laboratorium->nama }}</a></h4>
                         {{-- <span>Conbix Agency</span> --}}

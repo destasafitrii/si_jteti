@@ -28,15 +28,17 @@ class DosentiController extends Controller
             'nama' => 'required|string|max:255',
             'nip' => 'required|string|max:255|unique:dosenti',
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'nidn' => 'required|string|max:255|unique:dosenti',
+            'keahlian' => 'required|string|max:255',
             'jabatan' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255',
         ]);
 
         $dosenti = new Dosenti();
         $dosenti->nama = $request->nama;
         $dosenti->nip = $request->nip;
-        $dosenti->nidn = $request->nidn;
+        $dosenti->keahlian = $request->keahlian;
         $dosenti->jabatan = $request->jabatan;
+        $dosenti->email = $request->email;
 
         if ($request->hasFile('foto')) {
             $fileName = time() . '.' . $request->foto->extension();
@@ -70,15 +72,17 @@ class DosentiController extends Controller
             'nama' => 'required|string|max:255',
             'nip' => 'required|string|max:255|unique:dosenti,nip,' . $id,
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'nidn' => 'required|string|max:255|unique:dosenti,nidn,' . $id,
+            'keahlian' => 'required|string|max:255|',
             'jabatan' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255',
         ]);
 
         $dosenti = Dosenti::findOrFail($id);
         $dosenti->nama = $request->nama;
         $dosenti->nip = $request->nip;
-        $dosenti->nidn = $request->nidn;
+        $dosenti->keahlian = $request->keahlian;
         $dosenti->jabatan = $request->jabatan;
+        $dosenti->email = $request->email;
 
         if ($request->hasFile('foto')) {
             // Delete the old foto

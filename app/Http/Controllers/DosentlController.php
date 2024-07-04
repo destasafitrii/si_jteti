@@ -28,15 +28,17 @@ class DosentlController extends Controller
             'nama' => 'required|string|max:255',
             'nip' => 'required|string|max:255|unique:dosentl',
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'nidn' => 'required|string|max:255|unique:dosentl',
+            'keahlian' => 'required|string|max:255',
             'jabatan' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255',
         ]);
 
         $dosentl = new Dosentl();
         $dosentl->nama = $request->nama;
         $dosentl->nip = $request->nip;
-        $dosentl->nidn = $request->nidn;
+        $dosentl->keahlian = $request->keahlian;
         $dosentl->jabatan = $request->jabatan;
+        $dosentl->email = $request->email;
 
         if ($request->hasFile('foto')) {
             $fileName = time() . '.' . $request->foto->extension();
@@ -70,15 +72,17 @@ class DosentlController extends Controller
             'nama' => 'required|string|max:255',
             'nip' => 'required|string|max:255|unique:dosentl,nip,' . $id,
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'nidn' => 'required|string|max:255|unique:dosentl,nidn,' . $id,
+            'keahlian' => 'required|string|max:255',
             'jabatan' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255',
         ]);
 
         $dosentl = Dosentl::findOrFail($id);
         $dosentl->nama = $request->nama;
         $dosentl->nip = $request->nip;
-        $dosentl->nidn = $request->nidn;
+        $dosentl->keahlian = $request->keahlian;
         $dosentl->jabatan = $request->jabatan;
+        $dosentl->email = $request->email;
 
         if ($request->hasFile('foto')) {
             // Delete the old foto

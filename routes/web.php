@@ -48,76 +48,6 @@ use App\Http\Controllers\AdminController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
-
-// Route::get('/beranda', function () {
-//     return view('content/frontend/beranda');
-// });
-// Route::get('/visimisi_ti', function () {
-//     return view('content/frontend/profil/visimisi_ti');
-// });
-// Route::get('/visimisi_te', function () {
-//     return view('content/frontend/profil/visimisi_te');
-// });
-// Route::get('/dosen_ti', function () {
-//     return view('content/frontend/profil/dosen_ti');
-// });
-// Route::get('/dosen_te', function () {
-//     return view('content/frontend/profil/dosen_te');
-// });
-// Route::get('/teknisi_ti', function () {
-//     return view('content/frontend/profil/teknisi_ti');
-// });
-// Route::get('/teknisi_te', function () {
-//     return view('content/frontend/profil/teknisi_te');
-// });
-
-
-// Route::get('/laboratorium', function () {
-//     return view('content/frontend/fasilitas/laboratorium');
-// });
-// Route::get('/ruang_kelas', function () {
-//     return view('content/frontend/fasilitas/ruang_kelas');
-// });
-// Route::get('/ruang_manajemen', function () {
-//     return view('content/frontend/fasilitas/ruang_manajemen');
-// });
-
-// Route::get('/akreditasi_ti', function () {
-//     return view('content/frontend/akreditasi/akreditasi_ti');
-// });
-// Route::get('/akreditasi_te', function () {
-//     return view('content/frontend/akreditasi/akreditasi_te');
-// });
-
-
-// Route::get('/berita', function () {
-    //     return view('content/frontend/berita/berita');
-// });
-// Route::get('/penelitian', function () {
-//     return view('content/frontend/berita/penelitian');
-// });
-// Route::get('/pengabdian', function () {
-//     return view('content/frontend/berita/pengabdian');
-// });
-// Route::get('/pbl', function () {
-    //     return view('content/frontend/berita/pbl');
-    // });
-    // Route::get('/kontak', function () {
-//     return view('content/frontend/kontak');
-// });
-
-
-// Route::get('/detail_berita', function () {
-    //     return view('content/frontend/berita/detail_berita');
-    // });
-    // Route::get('/detail_fasilitas', function () {
-        //     return view('content/frontend/fasilitas/detail_laboratorium');
-        // });
-        
-        // Route::get('/admin/pimpinan', function () {
-            //         return view('content/backend/pimpinan/index'); 
-            // });
-            
             
 Route::get('/kurikulum_ti', function () {
         return view('content/frontend/akreditasi/kurikulum_ti');
@@ -152,6 +82,7 @@ Route::get('/berita-pbl/{id}', [BeritapblWebController::class, 'show'])->name('b
 Route::get('/beranda', [BerandaController::class, 'index'])->name('frontend.beranda.index');
 Route::get('/akreditasi-teknologi-informasi', [AkreditasitiWebController::class, 'index'])->name('frontend.akreditasi_ti.index');
 Route::get('/akreditasi-teknologi-listrik', [AkreditasitlWebController::class, 'index'])->name('frontend.akreditasi_te.index');
+Route::get('/kontak', function () { return view('content/frontend/kontak'); });
 // Routes for backend
 Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::get('dashboard', function () {

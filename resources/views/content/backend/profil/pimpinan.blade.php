@@ -32,7 +32,7 @@
                                 <thead>
                                     <tr>
                                         <th>Nama</th>
-                                        <th>NIDN</th>
+                                        <th>NIK</th>
                                         <th>NIP</th>
                                         <th>Jabatan</th>
                                         <th>Foto</th>
@@ -43,7 +43,7 @@
                                     @foreach ($pimpinans as $pimpinan)
                                         <tr>
                                             <td >{{ $pimpinan->nama }}</td>
-                                            <td >{{ $pimpinan->nidn }}</td>
+                                            <td >{{ $pimpinan->nik }}</td>
                                             <td >{{ $pimpinan->nip }}</td>
                                             <td >{{ $pimpinan->jabatan }}</td>
                                             <td>
@@ -85,7 +85,7 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <p><strong>Nama:</strong> {{ $pimpinan->nama }}</p>
-                                                        <p><strong>NIDN:</strong> {{ $pimpinan->nidn }}</p>
+                                                        <p><strong>NIK:</strong> {{ $pimpinan->nik }}</p>
                                                         <p><strong>NIP:</strong> {{ $pimpinan->nip }}</p>
                                                         <p><strong>Jabatan:</strong> {{ $pimpinan->jabatan }}</p>
                                                         @if ($pimpinan->foto)
@@ -127,9 +127,9 @@
                                                                     value="{{ $pimpinan->nama }}" required>
                                                             </div>
                                                             <div class="form-group mb-4">
-                                                                <label class="mb-2" for="nidn">NIDN</label>
-                                                                <input id="nidn" name="nidn" class="form-control"
-                                                                    value="{{ $pimpinan->nidn }}" required>
+                                                                <label class="mb-2" for="nik">NIK</label>
+                                                                <input id="nik" name="nik" class="form-control"
+                                                                    value="{{ $pimpinan->nik }}" required>
                                                             </div>
                                                             <div class="form-group mb-4">
                                                                 <label class="mb-2" for="nip">NIP</label>
@@ -211,8 +211,8 @@
                                                 <input id="nama" name="nama" class="form-control" required>
                                             </div>
                                             <div class="form-group mb-4">
-                                                <label class="mb-2" for="nidn">NIDN</label>
-                                                <input id="nidn" name="nidn" class="form-control" required>
+                                                <label class="mb-2" for="nik">NIK</label>
+                                                <input id="nik" name="nik" class="form-control" required>
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2" for="nip">NIP</label>
@@ -239,7 +239,6 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                     <!-- end col -->
                 </div> <!-- end row -->

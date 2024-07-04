@@ -27,15 +27,16 @@
                 <div class="team__two-item">
                     <div class="team__two-item-image">
                         @if($teknisiti->foto)
-                            <img src="{{ Storage::url('fotos/' . $teknisiti->foto) }}" alt="{{ $teknisiti->nama }}" style="width: 450px; height: 451px; object-fit: cover;">
+                            <img src="{{ Storage::url('fotos/' . $teknisiti->foto) }}" alt="{{ $teknisiti->nama }}" style="width: 300px; height: 301px; object-fit: cover;">
                         @else
-                            <img src="frontend/assets/img/team/default.jpg" alt="Default Foto" style="width: 450px; height: 451px; object-fit: cover;">
+                            <img src="frontend/assets/img/team/default.jpg" alt="Default Foto" style="width: 300px; height: 301px; object-fit: cover;">
                         @endif
                     </div>
                     <div class="team__two-item-content">
                         <h4>{{ $teknisiti->nama }}</h4>
-                        <span class="text-eight">NIP: {{ $teknisiti->nip }}</span><br>
-                        <span class="text-two">{{ $teknisiti->jabatan }}</span>
+                        <span class="text-eight">NITK/NIK: {{ $teknisiti->nip }}</span><br>
+                        <a href="mailto:{{ $teknisiti->email }}" class="text-eight">{{ $teknisiti->email }}</a><br>
+                        <span class="text-two">{{ $teknisiti->jabatan }}</span><br>
                     </div>
                 </div>
             </div>

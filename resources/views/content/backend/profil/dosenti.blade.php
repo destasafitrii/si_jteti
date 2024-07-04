@@ -32,9 +32,10 @@
                                 <thead>
                                     <tr>
                                         <th>Nama</th>
-                                        <th>NIDN</th>
-                                        <th>NIP</th>
+                                        <th>Email</th>
+                                        <th>NIDN/NIP</th>
                                         <th>Jabatan</th>
+                                        <th>Keahlian</th>
                                         <th>Foto</th>
                                         <th>Aksi</th>
                                     </tr>
@@ -43,9 +44,10 @@
                                     @foreach ($dosentis as $dosenti)
                                         <tr>
                                             <td>{{ $dosenti->nama }}</td>
-                                            <td>{{ $dosenti->nidn }}</td>
+                                            <td>{{ $dosenti->email }}</td>
                                             <td>{{ $dosenti->nip }}</td>
                                             <td>{{ $dosenti->jabatan }}</td>
+                                            <td>{{ $dosenti->keahlian }}</td>
                                             <td>
                                                 <div class="d-flex justify-content-center">
                                                     @if ($dosenti->foto)
@@ -85,9 +87,10 @@
                                                     </div>
                                                     <div class="modal-body">
                                                         <p><strong>Nama:</strong> {{ $dosenti->nama }}</p>
-                                                        <p><strong>NIDN:</strong> {{ $dosenti->nidn }}</p>
-                                                        <p><strong>NIP:</strong> {{ $dosenti->nip }}</p>
+                                                        <p><strong>NIDN/NIP:</strong> {{ $dosenti->nip }}</p>
                                                         <p><strong>Jabatan:</strong> {{ $dosenti->jabatan }}</p>
+                                                        <p><strong>Keahlian:</strong> {{ $dosenti->keahlian }}</p>
+                                                        <p><strong>Email:</strong> {{ $dosenti->email }}</p>
                                                         @if ($dosenti->foto)
                                                             <p><strong>Foto:</strong></p>
                                                             <img src="{{ Storage::url('fotos/' . $dosenti->foto) }}"
@@ -127,12 +130,12 @@
                                                                     value="{{ $dosenti->nama }}" required>
                                                             </div>
                                                             <div class="form-group mb-4">
-                                                                <label class="mb-2" for="nidn">NIDN</label>
-                                                                <input id="nidn" name="nidn" class="form-control"
-                                                                    value="{{ $dosenti->nidn }}" required>
+                                                                <label class="mb-2" for="email">Email</label>
+                                                                <input id="email" name="email" class="form-control"
+                                                                    value="{{ $dosenti->email }}" required>
                                                             </div>
                                                             <div class="form-group mb-4">
-                                                                <label class="mb-2" for="nip">NIP</label>
+                                                                <label class="mb-2" for="nip">NIDN/NIP</label>
                                                                 <input id="nip" name="nip" class="form-control"
                                                                     value="{{ $dosenti->nip }}" required>
                                                             </div>
@@ -140,6 +143,11 @@
                                                                 <label class="mb-2" for="jabatan">Jabatan</label>
                                                                 <input id="jabatan" name="jabatan" class="form-control"
                                                                     value="{{ $dosenti->jabatan }}" required>
+                                                            </div>
+                                                            <div class="form-group mb-4">
+                                                                <label class="mb-2" for="keahlian">Keahlian</label>
+                                                                <input id="keahlian" name="keahlian" class="form-control"
+                                                                    value="{{ $dosenti->keahlian }}" required>
                                                             </div>
                                                             <div class="form-group mb-4">
                                                                 <label class="mb-2" for="foto">Foto</label>
@@ -212,16 +220,20 @@
                                                 <input id="nama" name="nama" class="form-control" required>
                                             </div>
                                             <div class="form-group mb-4">
-                                                <label class="mb-2" for="nidn">NIDN</label>
-                                                <input id="nidn" name="nidn" class="form-control" required>
+                                                <label class="mb-2" for="email">Email</label>
+                                                <input id="email" name="email" class="form-control" required>
                                             </div>
                                             <div class="form-group mb-4">
-                                                <label class="mb-2" for="nip">NIP</label>
+                                                <label class="mb-2" for="nip">NIDN/NIP</label>
                                                 <input id="nip" name="nip" class="form-control" required>
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2" for="jabatan">Jabatan</label>
                                                 <input id="jabatan" name="jabatan" class="form-control" required>
+                                            </div>
+                                            <div class="form-group mb-4">
+                                                <label class="mb-2" for="keahlian">Keahlian</label>
+                                                <input id="keahlian" name="keahlian" class="form-control" required>
                                             </div>
                                             <div class="form-group mb-4">
                                                 <label class="mb-2" for="foto">Foto</label>

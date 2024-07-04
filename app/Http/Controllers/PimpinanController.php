@@ -28,14 +28,14 @@ class PimpinanController extends Controller
             'nama' => 'required|string|max:255',
             'nip' => 'required|string|max:255|unique:pimpinan',
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'nidn' => 'required|string|max:255|unique:pimpinan',
+            'nik' => 'required|string|max:255|unique:pimpinan',
             'jabatan' => 'required|string|max:255',
         ]);
 
         $pimpinan = new Pimpinan();
         $pimpinan->nama = $request->nama;
         $pimpinan->nip = $request->nip;
-        $pimpinan->nidn = $request->nidn;
+        $pimpinan->nik = $request->nik;
         $pimpinan->jabatan = $request->jabatan;
 
         if ($request->hasFile('foto')) {
@@ -70,14 +70,14 @@ class PimpinanController extends Controller
             'nama' => 'required|string|max:255',
             'nip' => 'required|string|max:255|unique:pimpinan,nip,' . $id,
             'foto' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-            'nidn' => 'required|string|max:255|unique:pimpinan,nidn,' . $id,
+            'nik' => 'required|string|max:255|unique:pimpinan,nik,' . $id,
             'jabatan' => 'required|string|max:255',
         ]);
 
         $pimpinan = Pimpinan::findOrFail($id);
         $pimpinan->nama = $request->nama;
         $pimpinan->nip = $request->nip;
-        $pimpinan->nidn = $request->nidn;
+        $pimpinan->nik = $request->nik;
         $pimpinan->jabatan = $request->jabatan;
 
         if ($request->hasFile('foto')) {
