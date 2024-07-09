@@ -106,57 +106,47 @@
 
                                         <!-- Edit Modal -->
                                         <div class="modal fade bs-example-modal-center" id="editModal{{ $pimpinan->id }}" tabindex="-1"
-                                            role="dialog" aria-labelledby="editModalLabel{{ $pimpinan->id }}"
-                                            aria-hidden="true">
+                                            role="dialog" aria-labelledby="editModalLabel{{ $pimpinan->id }}" aria-hidden="true">
                                             <div class="modal-dialog modal-dialog-centered">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h5 class="modal-title" id="editModalLabel{{ $pimpinan->id }}">Edit
-                                                            Pimpinan</h5>
-                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                                            aria-label="Close"></button>
+                                                        <h5 class="modal-title" id="editModalLabel{{ $pimpinan->id }}">Edit Pimpinan</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <form action="{{ route('pimpinan.update', $pimpinan->id) }}"
-                                                            method="POST" enctype="multipart/form-data">
+                                                        <form action="{{ route('pimpinan.update', $pimpinan->id) }}" method="POST" enctype="multipart/form-data">
                                                             @csrf
                                                             @method('PUT')
                                                             <div class="form-group mb-4">
                                                                 <label class="mb-2" for="nama">Nama</label>
-                                                                <input id="nama" name="nama" class="form-control"
-                                                                    value="{{ $pimpinan->nama }}" required>
+                                                                <input id="nama" name="nama" class="form-control" value="{{ $pimpinan->nama }}" required>
                                                             </div>
                                                             <div class="form-group mb-4">
                                                                 <label class="mb-2" for="nik">NIK</label>
-                                                                <input id="nik" name="nik" class="form-control"
-                                                                    value="{{ $pimpinan->nik }}" required>
+                                                                <input id="nik" name="nik" class="form-control" value="{{ $pimpinan->nik }}" required>
                                                             </div>
                                                             <div class="form-group mb-4">
                                                                 <label class="mb-2" for="nip">NIP</label>
-                                                                <input id="nip" name="nip" class="form-control"
-                                                                    value="{{ $pimpinan->nip }}" required>
+                                                                <input id="nip" name="nip" class="form-control" value="{{ $pimpinan->nip }}" required>
                                                             </div>
                                                             <div class="form-group mb-4">
                                                                 <label class="mb-2" for="jabatan">Jabatan</label>
-                                                                <input id="jabatan" name="jabatan" class="form-control"
-                                                                    value="{{ $pimpinan->jabatan }}" required>
+                                                                <input id="jabatan" name="jabatan" class="form-control" value="{{ $pimpinan->jabatan }}" required>
                                                             </div>
                                                             <div class="form-group mb-4">
                                                                 <label class="mb-2" for="foto">Foto</label>
-                                                                <input type="file" id="foto" name="foto"
-                                                                    class="form-control">
+                                                                <input type="file" id="foto" name="foto" class="form-control">
                                                             </div>
                                                             <div class="modal-footer">
-                                                                <button type="button" class="btn btn-secondary waves-effect"
-                                                                    data-bs-dismiss="modal" aria-label="Close">Close</button>
-                                                                <button class="btn btn-primary waves-effect waves-light"
-                                                                    type="submit">Submit</button>
+                                                                <button type="button" class="btn btn-secondary waves-effect" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                                                                <button class="btn btn-primary waves-effect waves-light" type="submit">Submit</button>
                                                             </div>
+                                                        </form>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
+                                        
                                         <!-- Delete Modal -->
                                         <div class="modal fade bs-example-modal-center"
                                             id="deleteModal{{ $pimpinan->id }}" tabindex="-1" role="dialog"
