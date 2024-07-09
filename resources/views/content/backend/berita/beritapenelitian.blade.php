@@ -27,21 +27,24 @@
                                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal"
                                     data-bs-target="#addModal">+ Tambah Data</button>
                             </p>
-                            <table id="datatable" class="table table-bordered dt-responsive nowrap"
-                                style="border-collapse: collapse; border-spacing: 0; width: 100%;">
-                                <thead>
-                                    <tr>
-                                        <th>Judul</th>
-                                        <th>Deskripsi</th>
-                                        <th>Foto</th>
-                                        <th>Aksi</th>
+                            <div class="table-responsive">
+                                <table id="datatable" class="table table-bordered dt-responsive nowrap"
+                                    style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+                                    <thead>
+                                        <tr>
+                                        <th style="min-width: 150px;">Judul</th>
+                                        <th style="min-width: 300px;">Deskripsi</th>
+                                        <th style="min-width: 100px;">Foto</th>
+                                        <th style="min-width: 100px;">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach ($beritapenelitians as $beritapenelitian)
                                         <tr>
                                             <td>{{ $beritapenelitian->judul }}</td>
-                                            <td>{{ $beritapenelitian->deskripsi }}</td>
+                                            <td style="max-width: 150px; overflow: hidden; text-overflow: ellipsis;" 
+                                            title="{{ $beritapenelitian->deskripsi }}">
+                                            {{ $beritapenelitian->deskripsi }}</td>
                                             <td>
                                                 <div class="d-flex justify-content-center">
                                                     @if ($beritapenelitian->foto)

@@ -1,6 +1,18 @@
 @extends('template.frontend')
 @section('content')
 <!-- Page Banner Area Start -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .page__banner-content h1 {
+            font-size: 50px;
+            color: white;
+        }
+    </style>
+    <title>Ruang Kelas</title>
+</head>
+
 <div class="page__banner" data-background="frontend/assets/img/banner/back.beranda.jpg">
     <div class="container">
         <div class="row">

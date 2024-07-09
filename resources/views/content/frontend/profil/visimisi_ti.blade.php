@@ -1,6 +1,18 @@
 @extends('template.frontend')
 @section('content')
 <!-- Page Banner Area Start -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .page__banner-content h1 {
+            font-size: 50px;
+            color: white;
+        }
+    </style>
+    <title>Prodi Teknologi Informasi</title>
+</head>
+
 <div class="page__banner" data-background="frontend/assets/img/banner/back.beranda.jpg">
     <div class="container">
         <div class="row">
@@ -11,7 +23,7 @@
                         <li><a href="index.html">Profil</a><span>|</span></li>
                         <li>Visi & Misi</li>
                     </ul>
-                    <h1> Teknologi Informasi</h1>
+                    <h1>Prodi Teknologi Informasi</h1>
                 </div>
             </div>
         </div>

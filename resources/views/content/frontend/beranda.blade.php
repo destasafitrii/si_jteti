@@ -54,7 +54,7 @@
         <div class="row align-items-center">
             <div class="col-xl-7 col-lg-6 lg-mb-30">
                 <div class="consulting__area-image dark__image">
-                    <img src="frontend/assets/img/beranda/logo-ti1.png" alt="">
+                    <img src="frontend/assets/img/beranda/logo-ti1.png"alt="">
                 </div>
             </div>
             <div class="col-xl-5 col-lg-6">
@@ -124,7 +124,7 @@
                     <div class="swiper-wrapper">
                         @foreach ($kegiatanmahasiswas as $kegiatanmahasiswa)
                         <div class="portfolio__area-item swiper-slide">
-                            <img src="{{ Storage::url('fotos/' . $kegiatanmahasiswa->foto) }}" alt="{{ $kegiatanmahasiswa->judul }}" style="width: 500px; height: 400px; object-fit: cover;">
+                            <img src="{{ Storage::url('fotos/' . $kegiatanmahasiswa->foto) }}" alt="{{ $kegiatanmahasiswa->judul }}" style="width: 400px; height: 300px; object-fit: cover;">
                             <div class="portfolio__area-item-content">
                                 <div class="portfolio__area-item-content-title">
                                     <h4>{{ $kegiatanmahasiswa->judul }}</h4>
@@ -170,7 +170,7 @@
                     </div>
                     <div class="blog__one-item-content">
                         <h4><a href="{{ route('berita_jurusan.show', $beritajurusan->id) }}">{{ $beritajurusan->judul }}</a></h4>
-                        <p>{{ $beritajurusan->deskripsi }}</p>
+                        {{-- <p>{{ $beritajurusan->deskripsi }}</p> --}}
                     </div>
                 </div>
             </div>
@@ -207,7 +207,7 @@
                     </div>
                     <div class="blog__one-item-content">
                         <h4><a href="{{ route('berita_jurusan.show', $beritapenelitian->id) }}">{{ $beritapenelitian->judul }}</a></h4>
-                        <p>{{ $beritapenelitian->deskripsi }}</p>
+                        {{-- <p>{{ $beritapenelitian->deskripsi }}</p> --}}
                     </div>
                 </div>
             </div>
@@ -244,7 +244,7 @@
                     </div>
                     <div class="blog__one-item-content">
                         <h4><a href="{{ route('berita_jurusan.show', $beritapengabdian->id) }}">{{ $beritapengabdian->judul }}</a></h4>
-                        <p>{{ $beritapengabdian->deskripsi }}</p>
+                        {{-- <p>{{ $beritapengabdian->deskripsi }}</p> --}}
                     </div>
                 </div>
             </div>
@@ -281,7 +281,7 @@
                     </div>
                     <div class="blog__one-item-content">
                         <h4><a href="{{ route('berita_jurusan.show', $beritapbl->id) }}">{{ $beritapbl->judul }}</a></h4>
-                        <p>{{ $beritapbl->deskripsi }}</p>
+                        {{-- <p>{{ $beritapbl->deskripsi }}</p> --}}
                     </div>
                 </div>
             </div>
