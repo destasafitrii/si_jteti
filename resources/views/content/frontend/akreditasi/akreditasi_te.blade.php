@@ -34,8 +34,8 @@
         <div class="row mb-70">
             <div class="col-xl-12">
                 <div class="company__history-title t-center">
-                    <span class="subtitle-one">Our History</span>
-                    <h2>Our Company History</h2>
+                    <span class="subtitle-one">Akreditasi</span>
+                    <h2>Prodi Teknologi Listrik</h2>
                 </div>
             </div>
         </div>

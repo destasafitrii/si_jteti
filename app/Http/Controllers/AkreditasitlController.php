@@ -18,7 +18,7 @@ class AkreditasitlController extends Controller
     // Show the form for creating a new resource.
     public function create()
     {
-        return view('akreditasi-teknologi-informasi.create');
+        return view('akreditasi-teknologi-listrik.create');
     }
 
     // Store a newly created resource in storage.
@@ -42,21 +42,21 @@ class AkreditasitlController extends Controller
 
         $akreditasitl->save();
 
-        return redirect()->route('akreditasi-teknologi-informasi.index')->with('success', 'Akreditasitl created successfully.');
+        return redirect()->route('akreditasi-teknologi-listrik.index')->with('success', 'Akreditasitl created successfully.');
     }
 
     // Display the specified resource.
     public function show($id)
     {
         $akreditasitl = Akreditasitl::findOrFail($id);
-        return view('akreditasi-teknologi-informasi.show', compact('akreditasitl'));
+        return view('akreditasi-teknologi-listrik.show', compact('akreditasitl'));
     }
 
     // Show the form for editing the specified resource.
     public function edit($id)
     {
         $akreditasitl = Akreditasitl::findOrFail($id);
-        return view('akreditasi-teknologi-informasi.edit', compact('akreditasitl'));
+        return view('akreditasi-teknologi-listrik.edit', compact('akreditasitl'));
     }
 
     // Update the specified resource in storage.
@@ -85,7 +85,7 @@ class AkreditasitlController extends Controller
 
         $akreditasitl->save();
 
-        return redirect()->route('akreditasi-teknologi-informasi.index')->with('success', 'Akreditasitl updated successfully.');
+        return redirect()->route('akreditasi-teknologi-listrik.index')->with('success', 'Akreditasitl updated successfully.');
     }
 
     // Remove the specified resource from storage.
@@ -99,6 +99,6 @@ class AkreditasitlController extends Controller
 
         $akreditasitl->delete();
 
-        return redirect()->route('akreditasi-teknologi-informasi.index')->with('success', 'Akreditasitl deleted successfully.');
+        return redirect()->route('akreditasi-teknologi-listrik.index')->with('success', 'Akreditasitl deleted successfully.');
     }
 }

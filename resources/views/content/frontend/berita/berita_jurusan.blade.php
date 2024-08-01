@@ -32,7 +32,7 @@
 <!-- Blog Area Start -->
 <div class="blog__two section-padding">
     <div class="container">
-        <div class="row">
+        <div class="row" >
             @foreach ($beritajurusans as $beritajurusan)
             <div class="col-xl-4 col-lg-6 mb-30">
                 <div class="blog__two-item page">
@@ -43,7 +43,7 @@
                         <div class="blog__two-item-content-meta">
                         </div>
                         <h4><a href="{{ route('berita_jurusan.show', $beritajurusan->id) }}">{{ $beritajurusan->judul }}</a></h4>
-                        <a class="btn-six" href="{{ route('berita_jurusan.show', $beritajurusan->id) }}">Read More<i class="far fa-chevron-double-right"></i></a>
+                        <a class="btn-six" href="{{ route('berita_jurusan.show', $beritajurusan->id) }}">Selengkapnya<i class="far fa-chevron-double-right"></i></a>
                     </div>
                 </div>
             </div>

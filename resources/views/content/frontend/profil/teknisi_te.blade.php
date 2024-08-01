@@ -9,6 +9,9 @@
             font-size: 50px;
             color: white;
         }
+        .email-lowercase {
+            text-transform: lowercase;
+        }
     </style>
     <title>Prodi Teknologi Listrik</title>
 </head>
@@ -32,7 +35,7 @@
 <!-- Team Page Area Start -->
 <div class="team__two section-padding">
     <div class="container">
-        <div class="row">
+        <div class="row"  style="justify-content: center;">
             @foreach($teknisitls as $teknisitl)
             <div class="col-xl-4 col-lg-4 col-md-6">
                 <div class="team__two-item">
@@ -48,7 +51,7 @@
                         <span class="text-two">{{ $teknisitl->jabatan }}</span><br>
                         <span class="text-eight">NITK/NIK: {{ $teknisitl->nik }}</span><br>
                         <span class="text-eight">Keahlian: {{ $teknisitl->keahlian }}</span><br>
-                        <a href="mailto:{{ $teknisitl->email }}" class="text-eight">{{ $teknisitl->email }}</a><br>
+                        <a href="mailto:{{ $teknisitl->email }}" class="text-eight email-lowercase">{{ $teknisitl->email }}</a><br>
                     </div>
                 </div>
             </div>

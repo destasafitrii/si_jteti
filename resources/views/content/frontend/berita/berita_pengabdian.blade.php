@@ -43,7 +43,7 @@
                         <div class="blog__two-item-content-meta">
                         </div>
                         <h4><a href="{{ route('berita_pengabdian.show', $beritapengabdian->id) }}">{{ $beritapengabdian->judul }}</a></h4>
-                        <a class="btn-six" href="{{ route('berita_pengabdian.show', $beritapengabdian->id) }}">Read More<i class="far fa-chevron-double-right"></i></a>
+                        <a class="btn-six" href="{{ route('berita_pengabdian.show', $beritapengabdian->id) }}">Selengkapnya<i class="far fa-chevron-double-right"></i></a>
                     </div>
                 </div>
             </div>

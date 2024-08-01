@@ -9,7 +9,7 @@
                     <div class="col-xl-12">
                         <div class="banner__two-content">
                             {{-- <b class="subtitle">Conbix</b> --}}
-                            <span data-animation="fadeInUp" data-delay=".3s">Selamat Datang di</span>
+                            <h1 data-animation="fadeInUp" data-delay=".3s"style ="font-size: 50px; margin-bottom: 10px;">Selamat Datang di</h1>
                             <h1 data-animation="fadeInUp" data-delay=".7s">Jurusan Teknik Elektro dan Teknik Informatika</h1>
                             {{-- <div class="banner__two-content-button" data-animation="fadeInUp" data-delay="1s">
                                 <a class="btn-five" href="project-three.html">Let's Recent Works<i class="far fa-chevron-double-right"></i></a>
@@ -27,7 +27,7 @@
                     <div class="col-xl-12">
                         <div class="banner__two-content">
                             {{-- <b class="subtitle">Conbix</b> --}}
-                            <span data-animation="fadeInUp" data-delay=".3s">selamat datang di</span>
+                            <h1 data-animation="fadeInUp" data-delay=".3s"style ="font-size: 50px; margin-bottom: 10px;">Selamat Datang di</h1>
                             <h1 data-animation="fadeInUp" data-delay=".7s">jurusan teknik elektro dan teknik informatika</h1>
                             {{-- <div class="banner__two-content-button" data-animation="fadeInUp" data-delay="1s">
                                 <a class="btn-five" href="project-three.html">Let's Recent Works<i class="far fa-chevron-double-right"></i></a>
@@ -54,23 +54,23 @@
         <div class="row align-items-center">
             <div class="col-xl-7 col-lg-6 lg-mb-30">
                 <div class="consulting__area-image dark__image">
-                    <img src="frontend/assets/img/beranda/logo-ti1.png"alt="">
+                    <img src="frontend/assets/img/beranda/foto-te.png"alt="">
                 </div>
             </div>
             <div class="col-xl-5 col-lg-6">
                 <div class="consulting__area-right">
                     <div class="consulting__area-right-title">
                         <span class="subtitle-two">Program Studi</span>
-                        <h2>D3 Teknologi Informasi</h2>
-                        <p>Lulusan program studi Teknologi Informasi Politeknik Negeri Ketapang dibekali dengan pengetahuan teoritis dan pengalaman praktek sehingga siap masuk ke dunia kerja. Lulusan dikategorikan sebagai Informatic-workers yaitu profesional yang bekerja dibidang informatika atau bidang lain yang berbasis teknologi informatika sebagai operator, programmer, atau analis dan designer.</p>
+                        <h2>D3 Teknologi Listrik</h2>
+                        <p>Lulusan program studi Teknologi Listrik Politeknik Negeri Ketapang dibekali dengan pengetahuan teoritis dan pengalaman praktik yang mendalam sehingga siap terjun ke dunia kerja. Lulusan dikategorikan sebagai Electrical Technicians, yaitu profesional yang bekerja di bidang kelistrikan atau bidang lain yang berbasis teknologi listrik sebagai teknisi, pengawas instalasi listrik, atau perancang sistem kelistrikan.</p>
                     </div>
                     <div class="banner__one-content-button" data-animation="fadeInUp" data-delay="1s">
                         <div class="consulting__area-right-list">
                             <span><i class="far fa-check"></i>Jenjang Diploma Tiga</span>
-                            <span><i class="far fa-check"></i>Gelar : A.Md.Kom</span>
+                            <span><i class="far fa-check"></i>Gelar : A.Md.T</span>
                         </div>
                         <div class="banner__one-content-video-icon" style="margin-left: 30px;margin-top: 7px;">
-                            <a class="video-popup" href="https://www.youtube.com/watch?v=PVEsqGrSa4E"><i class="fas fa-play"></i></a>										
+                            <a class="video-popup" href="https://www.youtube.com/watch?v=85lFM80NKys"><i class="fas fa-play"></i></a>										
                         </div> 
                     </div>
                 </div>
@@ -83,16 +83,16 @@
                 <div class="consulting__area-right">
                     <div class="consulting__area-right-title">
                         <span class="subtitle-two">Program Studi</span>
-                        <h2>D3 Teknologi Listrik</h2>
-                        <p>Lulusan program studi Teknologi Listrik Politeknik Negeri Ketapang dibekali dengan pengetahuan teoritis dan pengalaman praktik yang mendalam sehingga siap terjun ke dunia kerja. Lulusan dikategorikan sebagai Electrical Technicians, yaitu profesional yang bekerja di bidang kelistrikan atau bidang lain yang berbasis teknologi listrik sebagai teknisi, pengawas instalasi listrik, atau perancang sistem kelistrikan.</p>
+                        <h2>D3 Teknologi Informasi</h2>
+                        <p>Lulusan program studi Teknologi Informasi Politeknik Negeri Ketapang dibekali dengan pengetahuan teoritis dan pengalaman praktek sehingga siap masuk ke dunia kerja. Lulusan dikategorikan sebagai Informatic-workers yaitu profesional yang bekerja dibidang informatika atau bidang lain yang berbasis teknologi informatika sebagai operator, programmer, atau analis dan designer.</p>
                     </div>
 								<div class="banner__one-content-button" data-animation="fadeInUp" data-delay="1s">
                                     <div class="consulting__area-right-list">
                                         <span><i class="far fa-check"></i>Jenjang Diploma Tiga</span>
-                                        <span><i class="far fa-check"></i>Gelar : A.Md.T</span>
+                                        <span><i class="far fa-check"></i>Gelar : A.Md.Kom</span>
                                     </div>
 									<div class="banner__one-content-video-icon" style="margin-left: 30px;margin-top: 7px;">
-										<a class="video-popup" href="https://www.youtube.com/watch?v=85lFM80NKys"><i class="fas fa-play"></i></a>										
+										<a class="video-popup" href="https://www.youtube.com/watch?v=PVEsqGrSa4E"><i class="fas fa-play"></i></a>										
 									</div> 
 								</div>
                     {{-- <a class="btn-six" href="contact.html">Contact Us<i class="far fa-chevron-double-right"></i></a> --}}
@@ -100,7 +100,7 @@
             </div>
             <div class="col-xl-7 col-lg-6 lg-mb-30">
                 <div class="consulting__area-image dark__image">
-                    <img src="frontend/assets/img/beranda/foto-te.png" alt="">
+                    <img src="frontend/assets/img/beranda/logo-ti1.png" alt="">
                 </div>
             </div>
         </div>

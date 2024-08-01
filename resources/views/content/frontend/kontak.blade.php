@@ -29,7 +29,7 @@
                         </div>
                         <h4>Alamat</h4>
                         {{-- <span>You are most welcome to visit office.</span> --}}
-						<p>Jl. Rangge Sentap, Dalong, Sukaharja, Delta Pawan, Kabupaten Ketapang, Kalimantan Barat</p>
+						<p>Jl. Rangge Sentap, Dalong, Sukaharja, Delta Pawan, Kabupaten Ketapang,<br> Kalimantan Barat</p>
 					</div>
 				</div>
 				<div class="col-xl-4 col-lg-4 col-md-6 md-mb-30 wow fadeInUp" data-wow-delay=".8s">
@@ -51,9 +51,9 @@
 						</div>
                         <h4>Email</h4>
                         {{-- <span>Drop us a mail we will answer you asap.</span> --}}
-                        <p><a href="mailto:conbix@gmail.com">conbix@gmail.com</a></p>
+                        <p><a href="mailto:conbix@gmail.com">humas@politap.ac.id</a></p>
                         <p><a href="mailto:teknikelektro@politap.ac.id">teknikelektro@politap.ac.id</a></p>
-                        <p><a href="mailto:teknikinformatika@politap.ac.id">teknikinformatika@politap.ac.id</a></p>
+                        <p><a href="mailto:informatika@politap.ac.id">informatika@politap.ac.id</a></p>
 					</div>
 				</div>
 			</div>

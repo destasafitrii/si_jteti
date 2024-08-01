@@ -15,6 +15,7 @@
                                 <div class="news__details-left-meta-date">
                                     <span class="text-three">{{ $beritapenelitian->created_at->format('d') }}</span>
                                     <span class="text-five">{{ $beritapenelitian->created_at->format('M') }}</span>
+                                    <span class="text-five">{{ $beritapenelitian->created_at->format('Y') }}</span>
                                 </div>
                             </li>
                         </ul>
